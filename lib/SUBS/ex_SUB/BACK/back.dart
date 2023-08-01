@@ -43,7 +43,7 @@ Step 2: Keeping the movement under control and elbows pulled down and back pull 
                                   ),
                                   child: Row(
                                     mainAxisAlignment: MainAxisAlignment.start,
-                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/all.jpg') ,radius:35,),
+                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/wings.jpg') ,radius:35,),
                                       Text(
                                       'Chin-Up',
                                       style: GoogleFonts.alegreyaSc(fontSize: 30),
@@ -82,7 +82,7 @@ Step 2: Keeping the movement under control and elbows pulled down and back pull 
                                   ),
                                   child: Row(
                                     mainAxisAlignment: MainAxisAlignment.start,
-                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/all.jpg') ,radius:35,),
+                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/wings.jpg') ,radius:35,),
                                       Text(
                                       'T Bar Bend Over',
                                        style: GoogleFonts.alegreyaSc(fontSize: 30),
@@ -120,7 +120,7 @@ Step 2:Raise th dumbbells vertically towords your chest.Refain from flaring your
                                   ),
                                   child: Row(
                                     mainAxisAlignment: MainAxisAlignment.start,
-                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/all.jpg') ,radius:35,),
+                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/wings.jpg') ,radius:35,),
                                       Text(
                                       'DumbbellRow ',
                                        style: GoogleFonts.alegreyaSc(fontSize: 30),
@@ -156,7 +156,7 @@ Step 2:Raise the EZ curl bar vertically towards yours chest.Refrain from flaring
                                   ),
                                   child: Row(
                                     mainAxisAlignment: MainAxisAlignment.start,
-                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/all.jpg') ,radius:35,),
+                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/wings.jpg') ,radius:35,),
                                       Text(
                                       'Curl Bar-Row  ',
                                        style: GoogleFonts.alegreyaSc(fontSize: 30),

@@ -1,248 +1,8 @@
-// import 'package:flutter/material.dart';
 
-// class Legs extends StatelessWidget {
-//   const Legs({super.key});
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return  Scaffold(
-//       appBar: AppBar(),
-//       body: Column(
-//         children: [
-//            Center(
-//              child: Container(
-//                                 width: double.infinity,
-//                                 height: 70,
-//                                 decoration: BoxDecoration(
-//                                   borderRadius: BorderRadius.circular(10),
-//                                   color: Color.fromARGB(255, 255, 255, 255),
-//                                   border: Border.all(
-//                                       color: Color.fromARGB(255, 255, 255, 255)),
-//                                 ),
-//                                 child: Row(
-//                                   mainAxisAlignment: MainAxisAlignment.start,
-//                                   children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/all.jpg') ,radius:35,),
-//                                     Text(
-//                                     'PROFILE',
-//                                     style: TextStyle(fontSize: 35),
-           
-//                                   ),]
-//                                 )),
-                                
-//            ),
-          
-        
-//         Container(
-//                                 width: double.infinity,
-//                                 height: 70,
-//                                 decoration: BoxDecoration(
-//                                   borderRadius: BorderRadius.circular(10),
-//                                   color: Color.fromARGB(255, 255, 255, 255),
-//                                   border: Border.all(
-//                                       color: Color.fromARGB(255, 255, 255, 255)),
-//                                 ),
-//                                 child: Row(
-//                                   mainAxisAlignment: MainAxisAlignment.start,
-//                                   children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/all.jpg') ,radius:35,),
-//                                     Text(
-//                                     'PROFILE',
-//                                     style: TextStyle(fontSize: 35),
-           
-//                                   ),]
-//                                 )),
-//                                 Container(
-//                                 width: double.infinity,
-//                                 height: 70,
-//                                 decoration: BoxDecoration(
-//                                   borderRadius: BorderRadius.circular(10),
-//                                   color: Color.fromARGB(255, 255, 255, 255),
-//                                   border: Border.all(
-//                                       color: Color.fromARGB(255, 255, 255, 255)),
-//                                 ),
-//                                 child: Row(
-//                                   mainAxisAlignment: MainAxisAlignment.start,
-//                                   children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/all.jpg') ,radius:35,),
-//                                     Text(
-//                                     'PROFILE',
-//                                     style: TextStyle(fontSize: 35),
-           
-//                                   ),]
-//                                 )),
-//                                 Container(
-//                                 width: double.infinity,
-//                                 height: 70,
-//                                 decoration: BoxDecoration(
-//                                   borderRadius: BorderRadius.circular(10),
-//                                   color: Color.fromARGB(255, 255, 255, 255),
-//                                   border: Border.all(
-//                                       color: Color.fromARGB(255, 255, 255, 255)),
-//                                 ),
-//                                 child: Row(
-//                                   mainAxisAlignment: MainAxisAlignment.start,
-//                                   children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/all.jpg') ,radius:35,),
-//                                     Text(
-//                                     'PROFILE',
-//                                     style: TextStyle(fontSize: 35),
-           
-//                                   ),]
-//                                 )),],
-//       ),
-//     );
-//   }
-// }
-// // 1----------------------------------------------
-// class Squats extends StatelessWidget {
-//   const Squats  ({super.key});
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return  Scaffold(
-//       body: Column(
-//         crossAxisAlignment: CrossAxisAlignment.start,
-//         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-//         children: [
-//           Center(child: SizedBox(child: Image.asset('assets/images/steps.jpg',fit: BoxFit.fill,),)),
-
-//           Center(child: Text('Muscle : Glutes',style: TextStyle(fontSize: 20),)),
-//           Text(
-//           'Step 1: Place barbell bar across upper back and stand with your feet hip-width apart.',textAlign: TextAlign.start,
-          
-//           style: TextStyle(fontSize: 34,),
-//           ),
-//            Center(
-//             child: Text(
-//             'Step 2: Lower your hips until your thighs are parallel to the floor. Push back up all the way, pause, then go back down to parallel.',
-          
-//             style: TextStyle(fontSize: 34,),
-//           ),
-//           ),
-//           Center(
-//             child: Text(
-//             'Step 3:Pause again, then return to the start.',
-          
-//             style: TextStyle(fontSize: 34,),
-//           ),
-//           ),
-//           SizedBox(height:20 ,)
-//         ],
-//       ),
-//     );
-//   }
-// }
-// // 2----------------------------------------------
-// class DubbellLunges extends StatelessWidget {
-//   const DubbellLunges({super.key});
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       body:  Column(
-//         crossAxisAlignment: CrossAxisAlignment.start,
-//         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-//         children: [
-//           Center(child: SizedBox(child: Image.asset('assets/images/crunchesfull.jpg',fit: BoxFit.fill,),)),
-
-//           Center(child: Text('Muscle :  Quadriceps ',style: TextStyle(fontSize: 20),)),
-//           Text(
-//           'Step 1:Stand with dumbbells grasped to sides. Lunge forward with first leg. Land on heel then forefoot. Lower body by flexing knee and hip of front leg until knee of rear leg is almost in contact with floor.',textAlign: TextAlign.start,
-          
-//           style: TextStyle(fontSize: 34,),
-//           ),
-//            Center(
-//             child: Text(
-//             'Step 2:Return to original standing position by forcibly extending hip and knee of forward leg. Repeat by alternating lunge with opposite leg',
-          
-//             style: TextStyle(fontSize: 34,),
-//           ),
-//           ),
-         
-          
-//           SizedBox(height:20 ,)
-//         ],
-//       ),
-
-//     );
-//   }
-// }
-// // 3----------------------------------------------
-// class FrontSquats extends StatelessWidget {
-//   const FrontSquats ({super.key});
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return  Scaffold(
-//       body:   Column(
-//         crossAxisAlignment: CrossAxisAlignment.start,
-//         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-//         children: [
-//           Center(child: SizedBox(child: Image.asset('assets/images/crunchesfull.jpg',fit: BoxFit.fill,),)),
-
-//           Center(child: Text('Muscle :Glutes',style: TextStyle(fontSize: 20),)),
-//           Text(
-//           'Step 1:Position the dumbbell across your anterior deltoids, hold upper arms parallel to the floor, bend your elbows, cross your toe arms, rasp the bar, and look straight ahead: Inhale and squat down. ',textAlign: TextAlign.start,
-          
-//           style: TextStyle(fontSize: 34,),
-//           ),
-//           Center(
-//             child: Text(
-//             'Step 2: Return to the starting point, exhale as you complete the movement.',
-            
-          
-//             style: TextStyle(fontSize: 34,),
-//             )
-//           ),
-         
-//           SizedBox(height:20 ,)
-//         ],
-//       ),
-//     );
-//   }
-// }
-// // 4----------------------------------------------
-// class BenchJumb extends StatelessWidget {
-//   const BenchJumb ({super.key});
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return  Scaffold(
-//       body:   Column(
-//         crossAxisAlignment: CrossAxisAlignment.start,
-//         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-//         children: [
-//           Center(child: SizedBox(child: Image.asset('assets/images/crunchesfull.jpg',fit: BoxFit.fill,),)),
-
-//           Center(child: Text('Muscle :Glutes',style: TextStyle(fontSize: 20),)),
-//           Text(
-//           'Step 1:Stand in front of a bench. ',textAlign: TextAlign.start,
-          
-//           style: TextStyle(fontSize: 34,),
-//           ),
-//           Center(
-//             child: Text(
-//             'Step 2:Jump onto the bench and immediately ump back to the starting position on the floor.',
-            
-          
-//             style: TextStyle(fontSize: 34,),
-//             )
-//           ),
-//                Center(
-//             child: Text(
-//             'Step 2:Repeat multiple times.',
-            
-          
-//             style: TextStyle(fontSize: 34,),
-//             )
-//           ),
-         
-//           SizedBox(height:20 ,)
-//         ],
-//       ),
-//     );
-//   }
-// }
 // -------------------------------------
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:workouttraker/main_wgts/bottom_main.dart';
 
 class Legs extends StatelessWidget {
   const Legs({Key? key}) : super(key: key);
@@ -250,6 +10,9 @@ class Legs extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+         backgroundColor: Color.fromARGB(225, 27, 57, 61),
+      ),
       body: Column(
         children: [
           // --------------------------------------------------------1
@@ -260,7 +23,7 @@ class Legs extends StatelessWidget {
                 MaterialPageRoute(
                   builder: (context) => ModelsPage(
                     mymodel: Mymodel(
-                      'assets/images/131-1319291_six-pack-Back-gym-muscles-clipart-sticker-cartoon.png',
+                      'assets/images/Squats.jpg',
                       ' Glutes','''Step 1: Place barbell bar across upper back and stand with your feet hip-width apart.
 Step 2: Lower your hips until your thighs are parallel to the floor. Push back up all the way, pause, then go back down to parallel.
 Step 3:Pause again, then return to the start.
@@ -281,9 +44,9 @@ Step 3:Pause again, then return to the start.
                                   ),
                                   child: Row(
                                     mainAxisAlignment: MainAxisAlignment.start,
-                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/all.jpg') ,radius:35,),
+                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/legs.jpg') ,radius:35,),
                                       Text(
-                                      'DumbbellWristTwist',
+                                      'Squats',
                                       style: GoogleFonts.alegreyaSc(fontSize: 30),
              
                                     ),]
@@ -298,7 +61,7 @@ Step 3:Pause again, then return to the start.
                 MaterialPageRoute(
                   builder: (context) => ModelsPage(
                     mymodel: Mymodel(
-                      'assets/images/wings.jpg',
+                      'assets/images/Dumbbell Lunces.jpg',
                       'Quadriceps ','''Step 1:Stand with dumbbells grasped to sides. Lunge forward with first leg. Land on heel then forefoot. Lower body by flexing knee and hip of front leg until knee of rear leg is almost in contact with floor.
 Step 2:Return to original standing position by forcibly extending hip and knee of forward leg. Repeat by alternating lunge with opposite leg 
      
@@ -320,9 +83,9 @@ Step 2:Return to original standing position by forcibly extending hip and knee o
                                   ),
                                   child: Row(
                                     mainAxisAlignment: MainAxisAlignment.start,
-                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/all.jpg') ,radius:35,),
+                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/legs.jpg') ,radius:35,),
                                       Text(
-                                      'StandingWristCurl',
+                                      'Dumbbell Lunces',
                                        style: GoogleFonts.alegreyaSc(fontSize: 30),
              
                                     ),]
@@ -337,7 +100,7 @@ Step 2:Return to original standing position by forcibly extending hip and knee o
                 MaterialPageRoute(
                   builder: (context) => ModelsPage(
                     mymodel: Mymodel(
-                      'assets/images/wings.jpg',
+                      'assets/images/FrontSquats.jpg',
                       'Glutes','''Step 1:Position the dumbbell across your anterior deltoids, hold upper arms parallel to the floor, bend your elbows, cross your toe arms, rasp the bar, and look straight ahead: Inhale and squat down.
 Step 2: Return to the starting point, exhale as you complete the movement.
 
@@ -358,7 +121,7 @@ Step 2: Return to the starting point, exhale as you complete the movement.
                                   ),
                                   child: Row(
                                     mainAxisAlignment: MainAxisAlignment.start,
-                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/all.jpg') ,radius:35,),
+                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/legs.jpg') ,radius:35,),
                                       Text(
                                       'FrontSquats ',
                                        style: GoogleFonts.alegreyaSc(fontSize: 30),
@@ -375,7 +138,7 @@ Step 2: Return to the starting point, exhale as you complete the movement.
                 MaterialPageRoute(
                   builder: (context) => ModelsPage(
                     mymodel: Mymodel(
-                      'assets/images/wings.jpg',
+                      'assets/images/BenchJump.jpg',
                       'Glutes','''Step 1:Stand in front of a bench. 
 Step 2:Jump onto the bench and immediately ump back to the starting position on the floor.
 Step 2:Repeat multiple times.
@@ -397,7 +160,7 @@ Step 2:Repeat multiple times.
                                   ),
                                   child: Row(
                                     mainAxisAlignment: MainAxisAlignment.start,
-                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/all.jpg') ,radius:35,),
+                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/legs.jpg') ,radius:35,),
                                       Text(
                                       'BenchJumb',
                                        style: GoogleFonts.alegreyaSc(fontSize: 30),
@@ -433,9 +196,9 @@ class Models extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+   return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.grey,
+         backgroundColor: Color.fromARGB(225, 27, 57, 61),
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -444,8 +207,8 @@ class Models extends StatelessWidget {
           SizedBox(height: 40,),
           Center(
             child: SizedBox(
-              width: 200, // Adjust the width as needed
-              height: 200, // Adjust the height as needed
+              width: 300, // Adjust the width as needed
+              height:150, // Adjust the height as needed
               child: Image.asset(
                 mymodel.images,
                 fit: BoxFit.fill,
@@ -467,7 +230,131 @@ class Models extends StatelessWidget {
            Row(
 
             mainAxisAlignment: MainAxisAlignment.end,
-            children: [FloatingActionButton(onPressed: (){},child: Icon(Icons.add),backgroundColor: Colors.black,),
+            children: [FloatingActionButton(onPressed: (){
+              showDialog(
+
+                context: context,
+                builder: (ctx) =>AlertDialog(
+                  elevation: 10,
+                  backgroundColor: Color.fromARGB(255, 0, 0, 0),
+                  title: Text('kddjh'),
+                  content:
+                   Container(
+                    height: 350,
+                     child: Column(
+                      children: [
+                       TextFormField(
+                         decoration: InputDecoration(
+                          hintText: 'TYPE NAME',
+                                 filled: true,
+                                 fillColor: const Color.fromARGB(255, 255, 255, 255),
+                                 border: OutlineInputBorder(
+                                   
+                                   borderSide: BorderSide.none,
+                                   borderRadius: BorderRadius.circular(15)
+                                 ),
+                               ),
+                       ),
+                       SizedBox(
+                        height: 16,
+                       ),
+                       TextFormField(
+                         decoration: InputDecoration(
+                          hintText: 'KG',
+                                 filled: true,
+                                 fillColor: const Color.fromARGB(255, 255, 255, 255),
+                                 border: OutlineInputBorder(
+                                   
+                                   borderSide: BorderSide.none,
+                                   borderRadius: BorderRadius.circular(15)
+                                 ),
+                               ),
+                       ),
+                       SizedBox(
+                        height: 16,
+                       ),
+                       TextFormField(
+                         decoration: InputDecoration(
+                          hintText: 'SETS',
+                                 filled: true,
+                                 fillColor: const Color.fromARGB(255, 255, 255, 255),
+                                 border: OutlineInputBorder(
+                                   
+                                   borderSide: BorderSide.none,
+                                   borderRadius: BorderRadius.circular(15)
+                                 ),
+                               ),
+                       ),
+                       SizedBox(
+                        height: 16,
+                       ),
+                       TextFormField(
+                         decoration: InputDecoration(
+                          hintText: 'REPS',
+                                 filled: true,
+                                 fillColor: const Color.fromARGB(255, 255, 255, 255),
+                                 border: OutlineInputBorder(
+                                   
+                                   borderSide: BorderSide.none,
+                                   borderRadius: BorderRadius.circular(15)
+                                 ),
+                               ),
+                       ),
+                       SizedBox(
+                        height: 16,
+                       ),
+                       Container(
+                        height: 50,
+                        width: 300,
+                        // color: Colors.white,
+                        decoration: BoxDecoration(
+
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(15)
+                        ),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            IconButton(onPressed: (){}, icon: Icon(Icons.calendar_month)),
+     DropdownButton<String>(
+                      value: 'Day',
+                      items: <String>['Day', 'Week', 'Month',]
+                          .map<DropdownMenuItem<String>>((String value) {
+                        return DropdownMenuItem<String>(
+                          value: value,
+                          child: Text(
+                            value,
+                            style: TextStyle(fontSize: 30),
+                          ),
+                        );
+                      }).toList(),
+                      onChanged: (String? newValue) {
+                        // You can handle the onChanged event here if needed.
+                      },
+                    ),
+
+                          ],
+                        ),
+                       )
+                      ],
+                                     ),
+                   ),
+
+                  actions: [
+                    MaterialButton(onPressed: (
+                      
+                    ){
+                      
+                     Navigator.push(context, MaterialPageRoute(builder: (context) => ScreeenHome(),));
+                    },
+                    color: Colors.white,
+                    child: Text('ADD'),
+                    )
+                  ],
+                )
+       
+    );
+            },child: Icon(Icons.add),backgroundColor: Colors.black,),
              SizedBox(width: 15,),]
             ),
            

@@ -2,6 +2,7 @@
 // ----------------------------------------------
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:workouttraker/main_wgts/bottom_main.dart';
 
 class Forearms extends StatelessWidget {
   const Forearms({Key? key}) : super(key: key);
@@ -9,6 +10,9 @@ class Forearms extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+         backgroundColor: Color.fromARGB(225, 27, 57, 61),
+      ),
       body: Column(
         children: [
           // --------------------------------------------------------1
@@ -19,7 +23,7 @@ class Forearms extends StatelessWidget {
                 MaterialPageRoute(
                   builder: (context) => ModelsPage(
                     mymodel: Mymodel(
-                      'assets/images/131-1319291_six-pack-Back-gym-muscles-clipart-sticker-cartoon.png',
+                      'assets/images/DumbbellWristTwist.jpg',
                       'Wrist Extensor','''Step 1:Stand with Light Dumbbell in each hand with your arms at your sides, palms facing behind you. Bend your arms to curl the weights up until your forearms are parallel to the floor. This is the starting position.
 Step 2: Rotate your wrists until your palms face the ceiling, then back so your the floor once again. Thats one repetition.
                       '''
@@ -39,7 +43,7 @@ Step 2: Rotate your wrists until your palms face the ceiling, then back so your 
                                   ),
                                   child: Row(
                                     mainAxisAlignment: MainAxisAlignment.start,
-                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/all.jpg') ,radius:35,),
+                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/forearms.jpg') ,radius:35,),
                                       Text(
                                       'DumbbellWristTwist',
                                       style: GoogleFonts.alegreyaSc(fontSize: 30),
@@ -56,7 +60,7 @@ Step 2: Rotate your wrists until your palms face the ceiling, then back so your 
                 MaterialPageRoute(
                   builder: (context) => ModelsPage(
                     mymodel: Mymodel(
-                      'assets/images/wings.jpg',
+                      'assets/images/StandingWristCurl.jpg',
                       'Wrist Extensor ','''Step 1:Grab a barbell behind using an underhand grip while keeping your arms straight. Hang the barbell so that it rests on your extended fingers.
 Step 2:Flex your wrists to raise the barbell up as high as possible   
 Step 3:Reverse the movement to lower the barbell.          
@@ -78,7 +82,7 @@ Step 3:Reverse the movement to lower the barbell.
                                   ),
                                   child: Row(
                                     mainAxisAlignment: MainAxisAlignment.start,
-                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/all.jpg') ,radius:35,),
+                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/forearms.jpg') ,radius:35,),
                                       Text(
                                       'StandingWristCurl',
                                        style: GoogleFonts.alegreyaSc(fontSize: 30),
@@ -95,7 +99,7 @@ Step 3:Reverse the movement to lower the barbell.
                 MaterialPageRoute(
                   builder: (context) => ModelsPage(
                     mymodel: Mymodel(
-                      'assets/images/wings.jpg',
+                      'assets/images/WristCurls.jpg',
                       'Wrist Extensor','''Step 1:Sit with your forearms resting on your thighs or on a bench. Take an underhand grip on the bar with your wrists passively extended Inhale and curl your wrist up.
 Step 2:Exhale as you complete the movement.
 
@@ -116,7 +120,7 @@ Step 2:Exhale as you complete the movement.
                                   ),
                                   child: Row(
                                     mainAxisAlignment: MainAxisAlignment.start,
-                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/all.jpg') ,radius:35,),
+                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/forearms.jpg') ,radius:35,),
                                       Text(
                                       'WristCurls ',
                                        style: GoogleFonts.alegreyaSc(fontSize: 30),
@@ -153,9 +157,9 @@ class Models extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+   return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.grey,
+         backgroundColor: Color.fromARGB(225, 27, 57, 61),
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -164,8 +168,8 @@ class Models extends StatelessWidget {
           SizedBox(height: 40,),
           Center(
             child: SizedBox(
-              width: 200, // Adjust the width as needed
-              height: 200, // Adjust the height as needed
+              width: 300, // Adjust the width as needed
+              height:150, // Adjust the height as needed
               child: Image.asset(
                 mymodel.images,
                 fit: BoxFit.fill,
@@ -187,7 +191,131 @@ class Models extends StatelessWidget {
            Row(
 
             mainAxisAlignment: MainAxisAlignment.end,
-            children: [FloatingActionButton(onPressed: (){},child: Icon(Icons.add),backgroundColor: Colors.black,),
+            children: [FloatingActionButton(onPressed: (){
+              showDialog(
+
+                context: context,
+                builder: (ctx) =>AlertDialog(
+                  elevation: 10,
+                  backgroundColor: Color.fromARGB(255, 0, 0, 0),
+                  title: Text('kddjh'),
+                  content:
+                   Container(
+                    height: 350,
+                     child: Column(
+                      children: [
+                       TextFormField(
+                         decoration: InputDecoration(
+                          hintText: 'TYPE NAME',
+                                 filled: true,
+                                 fillColor: const Color.fromARGB(255, 255, 255, 255),
+                                 border: OutlineInputBorder(
+                                   
+                                   borderSide: BorderSide.none,
+                                   borderRadius: BorderRadius.circular(15)
+                                 ),
+                               ),
+                       ),
+                       SizedBox(
+                        height: 16,
+                       ),
+                       TextFormField(
+                         decoration: InputDecoration(
+                          hintText: 'KG',
+                                 filled: true,
+                                 fillColor: const Color.fromARGB(255, 255, 255, 255),
+                                 border: OutlineInputBorder(
+                                   
+                                   borderSide: BorderSide.none,
+                                   borderRadius: BorderRadius.circular(15)
+                                 ),
+                               ),
+                       ),
+                       SizedBox(
+                        height: 16,
+                       ),
+                       TextFormField(
+                         decoration: InputDecoration(
+                          hintText: 'SETS',
+                                 filled: true,
+                                 fillColor: const Color.fromARGB(255, 255, 255, 255),
+                                 border: OutlineInputBorder(
+                                   
+                                   borderSide: BorderSide.none,
+                                   borderRadius: BorderRadius.circular(15)
+                                 ),
+                               ),
+                       ),
+                       SizedBox(
+                        height: 16,
+                       ),
+                       TextFormField(
+                         decoration: InputDecoration(
+                          hintText: 'REPS',
+                                 filled: true,
+                                 fillColor: const Color.fromARGB(255, 255, 255, 255),
+                                 border: OutlineInputBorder(
+                                   
+                                   borderSide: BorderSide.none,
+                                   borderRadius: BorderRadius.circular(15)
+                                 ),
+                               ),
+                       ),
+                       SizedBox(
+                        height: 16,
+                       ),
+                       Container(
+                        height: 50,
+                        width: 300,
+                        // color: Colors.white,
+                        decoration: BoxDecoration(
+
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(15)
+                        ),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            IconButton(onPressed: (){}, icon: Icon(Icons.calendar_month)),
+     DropdownButton<String>(
+                      value: 'Day',
+                      items: <String>['Day', 'Week', 'Month',]
+                          .map<DropdownMenuItem<String>>((String value) {
+                        return DropdownMenuItem<String>(
+                          value: value,
+                          child: Text(
+                            value,
+                            style: TextStyle(fontSize: 30),
+                          ),
+                        );
+                      }).toList(),
+                      onChanged: (String? newValue) {
+                        // You can handle the onChanged event here if needed.
+                      },
+                    ),
+
+                          ],
+                        ),
+                       )
+                      ],
+                                     ),
+                   ),
+
+                  actions: [
+                    MaterialButton(onPressed: (
+                      
+                    ){
+                      
+                     Navigator.push(context, MaterialPageRoute(builder: (context) => ScreeenHome(),));
+                    },
+                    color: Colors.white,
+                    child: Text('ADD'),
+                    )
+                  ],
+                )
+       
+    );
+            },child: Icon(Icons.add),backgroundColor: Colors.black,),
              SizedBox(width: 15,),]
             ),
            

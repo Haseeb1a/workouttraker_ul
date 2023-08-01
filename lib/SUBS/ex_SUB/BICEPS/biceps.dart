@@ -43,7 +43,7 @@ Step 2:Keep the elbows stationary and only bring the weight as high as you can w
                                   ),
                                   child: Row(
                                     mainAxisAlignment: MainAxisAlignment.start,
-                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/all.jpg') ,radius:35,),
+                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/biceps.jpg') ,radius:35,),
                                       Text(
                                       'Curls',
                                       style: GoogleFonts.alegreyaSc(fontSize: 30),
@@ -82,7 +82,7 @@ Step 2:Keep the elbows stationary and only bring the weight as high as you can w
                                   ),
                                   child: Row(
                                     mainAxisAlignment: MainAxisAlignment.start,
-                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/all.jpg') ,radius:35,),
+                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/biceps.jpg') ,radius:35,),
                                       Text(
                                       'BarBellCurls',
                                        style: GoogleFonts.alegreyaSc(fontSize: 30),
@@ -120,7 +120,7 @@ Step 2: Pull the pulley handles upwards until your forearms cross. Hold for one 
                                   ),
                                   child: Row(
                                     mainAxisAlignment: MainAxisAlignment.start,
-                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/all.jpg') ,radius:35,),
+                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/biceps.jpg') ,radius:35,),
                                       Text(
                                       'Lo  pulley carle crossover',
                                        style: GoogleFonts.alegreyaSc(fontSize: 30),
@@ -158,7 +158,7 @@ Step 3:Bending at the elbow, curl the dumbbell up to shoulder level and pause mo
                                   ),
                                   child: Row(
                                     mainAxisAlignment: MainAxisAlignment.start,
-                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/all.jpg') ,radius:35,),
+                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/biceps.jpg') ,radius:35,),
                                       Text(
                                       'Dumbbellbiceps ',
                                        style: GoogleFonts.alegreyaSc(fontSize: 30),
@@ -196,7 +196,7 @@ Step 3:Raise the EZ curl bar vertically towards yours chest.Refrain from flaring
                                   ),
                                   child: Row(
                                     mainAxisAlignment: MainAxisAlignment.start,
-                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/all.jpg') ,radius:35,),
+                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/biceps.jpg') ,radius:35,),
                                       Text(
                                       'Concentration ',
                                        style: GoogleFonts.alegreyaSc(fontSize: 30),

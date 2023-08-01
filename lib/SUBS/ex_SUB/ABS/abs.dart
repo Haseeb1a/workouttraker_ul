@@ -323,7 +323,7 @@ Step 2: Raise your upper body upward while keeping your lower back on the bench 
                                   ),
                                   child: Row(
                                     mainAxisAlignment: MainAxisAlignment.start,
-                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/all.jpg') ,radius:35,),
+                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/131-1319291_six-pack-abs-gym-muscles-clipart-sticker-cartoon.png') ,radius:35,),
                                       Text(
                                       'Incline Bench Sit-Up',
                                       style: GoogleFonts.alegreyaSc(fontSize: 30),
@@ -361,7 +361,7 @@ Step 2: Raise your upper body upward while keeping your lower back on the bench 
                                   ),
                                   child: Row(
                                     mainAxisAlignment: MainAxisAlignment.start,
-                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/all.jpg') ,radius:35,),
+                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/131-1319291_six-pack-abs-gym-muscles-clipart-sticker-cartoon.png') ,radius:35,),
                                       Text(
                                       'Crunches',
                                        style: GoogleFonts.alegreyaSc(fontSize: 30),
@@ -399,7 +399,7 @@ Step 3:Hold for a fee seconds,then lower your legs back down to the start postio
                                   ),
                                   child: Row(
                                     mainAxisAlignment: MainAxisAlignment.start,
-                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/all.jpg') ,radius:35,),
+                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/131-1319291_six-pack-abs-gym-muscles-clipart-sticker-cartoon.png') ,radius:35,),
                                       Text(
                                       'Twistiing Hip-Raise',
                                        style: GoogleFonts.alegreyaSc(fontSize: 30),
@@ -435,7 +435,7 @@ Step 2: Pull your navel inward and flex your glutes as you lift your hips just a
                                   ),
                                   child: Row(
                                     mainAxisAlignment: MainAxisAlignment.start,
-                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/all.jpg') ,radius:35,),
+                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/131-1319291_six-pack-abs-gym-muscles-clipart-sticker-cartoon.png') ,radius:35,),
                                       Text(
                                       'wistiing Hip-Raise 2',
                                        style: GoogleFonts.alegreyaSc(fontSize: 30),

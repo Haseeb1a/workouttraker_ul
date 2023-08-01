@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:workouttraker/main_wgts/bottom_main.dart';
 
 class Chest extends StatelessWidget {
   const Chest({Key? key}) : super(key: key);
@@ -8,6 +9,9 @@ class Chest extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+         backgroundColor: Color.fromARGB(225, 27, 57, 61),
+      ),
       body: Column(
         children: [
           // --------------------------------------------------------1
@@ -18,7 +22,7 @@ class Chest extends StatelessWidget {
                 MaterialPageRoute(
                   builder: (context) => ModelsPage(
                     mymodel: Mymodel(
-                      'assets/images/131-1319291_six-pack-Back-gym-muscles-clipart-sticker-cartoon.png',
+                      'assets/images/BenchPresses.jpg',
                       'Pectoralis','''Step 1: Lay flat on a bench and have your feet flat on the floor. The bar, when racked, will be slightly behind your head. It is important to use a spotter for this exercise, especially if you are using a free bar or dumbbells, to eliminate the chance of dropping the weight on yourself.
 Step 2: Once you have lifted the weight off of the rack, the bar will be directly over the center of your chest. Keep your head on the bench at all times throughout the movement. Once you have the bar steady, slowly lower it to about chest level, if you are able to. your arms pointed outward as the bar drops. Upon reaching the bottom the movement, press the bar back up to an extended position, focusing on driving the bar upwards with your chest and arms.
 
@@ -39,7 +43,7 @@ Step 2: Once you have lifted the weight off of the rack, the bar will be directl
                                   ),
                                   child: Row(
                                     mainAxisAlignment: MainAxisAlignment.start,
-                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/all.jpg') ,radius:35,),
+                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/chest (2).jpg') ,radius:35,),
                                       Text(
                                       'BenchPresses',
                                       style: GoogleFonts.alegreyaSc(fontSize: 30),
@@ -56,7 +60,7 @@ Step 2: Once you have lifted the weight off of the rack, the bar will be directl
                 MaterialPageRoute(
                   builder: (context) => ModelsPage(
                     mymodel: Mymodel(
-                      'assets/images/wings.jpg',
+                      'assets/images/Push-ups.jpg',
                       'Latissims Dorsi','''Step 1: Lie prone with your arms straight, your palms flat on the floor, and your hands shoulder-width apart (or wider).
 Step 2:Hold your feet together or very slightly spread: Inhale and bend your elbows to bring your torso near the floor, avoiding extreme hyperextension of your spine Push yourself back to arms, extended position, exhaling as you complete the movement.
 
@@ -78,9 +82,9 @@ Step 2:Hold your feet together or very slightly spread: Inhale and bend your elb
                                   ),
                                   child: Row(
                                     mainAxisAlignment: MainAxisAlignment.start,
-                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/all.jpg') ,radius:35,),
+                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/chest (2).jpg') ,radius:35,),
                                       Text(
-                                      'Dumbbelcalf',
+                                      'Push-ups',
                                        style: GoogleFonts.alegreyaSc(fontSize: 30),
              
                                     ),]
@@ -95,7 +99,7 @@ Step 2:Hold your feet together or very slightly spread: Inhale and bend your elb
                 MaterialPageRoute(
                   builder: (context) => ModelsPage(
                     mymodel: Mymodel(
-                      'assets/images/wings.jpg',
+                      'assets/images/Bodyweight Push up touch.jpg',
                       'Muscle :Pectoralis','''Step 1:Lie down chest first with your hands on the floor. Position hands under your shoulders. Distance between your hands should be narrower than shoulder width apart. Lift yourself with your arms so that only your hands and toes are on the floor. Maintain a straight back. Hands point slightly outward.
 Step 2:Lower yourself until your chest is inches away from the floor by bending your elbows. The elbows should bend towards your feet.
 
@@ -117,9 +121,9 @@ Step 2:Lower yourself until your chest is inches away from the floor by bending 
                                   ),
                                   child: Row(
                                     mainAxisAlignment: MainAxisAlignment.start,
-                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/all.jpg') ,radius:35,),
+                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/chest (2).jpg') ,radius:35,),
                                       Text(
-                                      'StandingBarbell',
+                                      'Bodyweight Push up touch',
                                        style: GoogleFonts.alegreyaSc(fontSize: 30),
              
                                     ),]
@@ -134,7 +138,7 @@ Step 2:Lower yourself until your chest is inches away from the floor by bending 
                 MaterialPageRoute(
                   builder: (context) => ModelsPage(
                     mymodel: Mymodel(
-                      'assets/images/wings.jpg',
+                      'assets/images/BodyPushUpExtension.jpg',
                       'Muscle :Group: Pectoralis','''Step 1:  Lie down chest first with your hands on the floor. Position hands under your shoulders. Distance between your hands should be narrower than shoulder width apart. Lift yourself with your arms so that only your hands and toes are on the floor. Maintain a straight back. Hands point slightly outward.
 Step 2:Lower yourself until chest is inches away from the floor by bending your elbows. The elbows should bend towards your feet.
 Step 3:Extend one arm after every time your come up. Hold for one second. Return to starting position. 
@@ -157,7 +161,7 @@ Step 3:Extend one arm after every time your come up. Hold for one second. Return
                                   ),
                                   child: Row(
                                     mainAxisAlignment: MainAxisAlignment.start,
-                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/all.jpg') ,radius:35,),
+                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/chest (2).jpg') ,radius:35,),
                                       Text(
                                       'BodyPushUpExtension',
                                        style: GoogleFonts.alegreyaSc(fontSize: 30),
@@ -174,7 +178,7 @@ Step 3:Extend one arm after every time your come up. Hold for one second. Return
                 MaterialPageRoute(
                   builder: (context) => ModelsPage(
                     mymodel: Mymodel(
-                      'assets/images/wings.jpg',
+                      'assets/images/BarBellBenchPress.jpg',
                       'Group: Pectoralis','''Step 1:Lie back on the decline bench. Hold the barbell with overhand grip. Lower the barbell towards your lower chest as you keep your elbows close to your body.
 Step 2:The barbell should slightly touch your chest at the end of the movement.
                       '''
@@ -196,7 +200,7 @@ Step 2:The barbell should slightly touch your chest at the end of the movement.
                                     mainAxisAlignment: MainAxisAlignment.start,
                                     children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/all.jpg') ,radius:35,),
                                       Text(
-                                      'BarBellBenchPushUp',
+                                      'BarBellBenchPress',
                                        style: GoogleFonts.alegreyaSc(fontSize: 30),
              
                                     ),]
@@ -227,9 +231,10 @@ class Models extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+   
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.grey,
+         backgroundColor: Color.fromARGB(225, 27, 57, 61),
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -238,8 +243,8 @@ class Models extends StatelessWidget {
           SizedBox(height: 40,),
           Center(
             child: SizedBox(
-              width: 200, // Adjust the width as needed
-              height: 200, // Adjust the height as needed
+              width: 300, // Adjust the width as needed
+              height:150, // Adjust the height as needed
               child: Image.asset(
                 mymodel.images,
                 fit: BoxFit.fill,
@@ -261,7 +266,131 @@ class Models extends StatelessWidget {
            Row(
 
             mainAxisAlignment: MainAxisAlignment.end,
-            children: [FloatingActionButton(onPressed: (){},child: Icon(Icons.add),backgroundColor: Colors.black,),
+            children: [FloatingActionButton(onPressed: (){
+              showDialog(
+
+                context: context,
+                builder: (ctx) =>AlertDialog(
+                  elevation: 10,
+                  backgroundColor: Color.fromARGB(255, 0, 0, 0),
+                  title: Text('kddjh'),
+                  content:
+                   Container(
+                    height: 350,
+                     child: Column(
+                      children: [
+                       TextFormField(
+                         decoration: InputDecoration(
+                          hintText: 'TYPE NAME',
+                                 filled: true,
+                                 fillColor: const Color.fromARGB(255, 255, 255, 255),
+                                 border: OutlineInputBorder(
+                                   
+                                   borderSide: BorderSide.none,
+                                   borderRadius: BorderRadius.circular(15)
+                                 ),
+                               ),
+                       ),
+                       SizedBox(
+                        height: 16,
+                       ),
+                       TextFormField(
+                         decoration: InputDecoration(
+                          hintText: 'KG',
+                                 filled: true,
+                                 fillColor: const Color.fromARGB(255, 255, 255, 255),
+                                 border: OutlineInputBorder(
+                                   
+                                   borderSide: BorderSide.none,
+                                   borderRadius: BorderRadius.circular(15)
+                                 ),
+                               ),
+                       ),
+                       SizedBox(
+                        height: 16,
+                       ),
+                       TextFormField(
+                         decoration: InputDecoration(
+                          hintText: 'SETS',
+                                 filled: true,
+                                 fillColor: const Color.fromARGB(255, 255, 255, 255),
+                                 border: OutlineInputBorder(
+                                   
+                                   borderSide: BorderSide.none,
+                                   borderRadius: BorderRadius.circular(15)
+                                 ),
+                               ),
+                       ),
+                       SizedBox(
+                        height: 16,
+                       ),
+                       TextFormField(
+                         decoration: InputDecoration(
+                          hintText: 'REPS',
+                                 filled: true,
+                                 fillColor: const Color.fromARGB(255, 255, 255, 255),
+                                 border: OutlineInputBorder(
+                                   
+                                   borderSide: BorderSide.none,
+                                   borderRadius: BorderRadius.circular(15)
+                                 ),
+                               ),
+                       ),
+                       SizedBox(
+                        height: 16,
+                       ),
+                       Container(
+                        height: 50,
+                        width: 300,
+                        // color: Colors.white,
+                        decoration: BoxDecoration(
+
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(15)
+                        ),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            IconButton(onPressed: (){}, icon: Icon(Icons.calendar_month)),
+     DropdownButton<String>(
+                      value: 'Day',
+                      items: <String>['Day', 'Week', 'Month',]
+                          .map<DropdownMenuItem<String>>((String value) {
+                        return DropdownMenuItem<String>(
+                          value: value,
+                          child: Text(
+                            value,
+                            style: TextStyle(fontSize: 30),
+                          ),
+                        );
+                      }).toList(),
+                      onChanged: (String? newValue) {
+                        // You can handle the onChanged event here if needed.
+                      },
+                    ),
+
+                          ],
+                        ),
+                       )
+                      ],
+                                     ),
+                   ),
+
+                  actions: [
+                    MaterialButton(onPressed: (
+                      
+                    ){
+                      
+                     Navigator.push(context, MaterialPageRoute(builder: (context) => ScreeenHome(),));
+                    },
+                    color: Colors.white,
+                    child: Text('ADD'),
+                    )
+                  ],
+                )
+       
+    );
+            },child: Icon(Icons.add),backgroundColor: Colors.black,),
              SizedBox(width: 15,),]
             ),
            

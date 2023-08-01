@@ -10,6 +10,9 @@ class Calf extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+         backgroundColor: Color.fromARGB(225, 27, 57, 61),
+      ),
       body: Column(
         children: [
           // --------------------------------------------------------1
@@ -41,7 +44,7 @@ Step 3: Pause at the top, then slowly lower your heels back down.
                                   ),
                                   child: Row(
                                     mainAxisAlignment: MainAxisAlignment.start,
-                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/all.jpg') ,radius:35,),
+                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/calf.jpg') ,radius:35,),
                                       Text(
                                       'ToeRaises',
                                       style: GoogleFonts.alegreyaSc(fontSize: 30),
@@ -80,7 +83,7 @@ Step 3:  Allow your knees to bend 45 degrees when your land, then immediately ju
                                   ),
                                   child: Row(
                                     mainAxisAlignment: MainAxisAlignment.start,
-                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/all.jpg') ,radius:35,),
+                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/calf.jpg') ,radius:35,),
                                       Text(
                                       'Dumbbelcalf',
                                        style: GoogleFonts.alegreyaSc(fontSize: 30),
@@ -118,7 +121,7 @@ Step 2: Raise your calves by tiptoeing. Hold for one second. Lower your calves b
                                   ),
                                   child: Row(
                                     mainAxisAlignment: MainAxisAlignment.start,
-                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/all.jpg') ,radius:35,),
+                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/calf.jpg') ,radius:35,),
                                       Text(
                                       'StandingBarbell ',
                                        style: GoogleFonts.alegreyaSc(fontSize: 30),
