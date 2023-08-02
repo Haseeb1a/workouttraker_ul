@@ -33,6 +33,7 @@ Step 2: Keeping the movement under control and elbows pulled down and back pull 
               );
             },
             child: Container(
+              padding: EdgeInsets.all(5),
                width: double.infinity,
                                   height: 70,
                                   decoration: BoxDecoration(
@@ -43,15 +44,17 @@ Step 2: Keeping the movement under control and elbows pulled down and back pull 
                                   ),
                                   child: Row(
                                     mainAxisAlignment: MainAxisAlignment.start,
-                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/wings.jpg') ,radius:35,),
+                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/wings.jpg') ,radius:33,),
+                                    SizedBox(width: 5),
                                       Text(
                                       'Chin-Up',
-                                      style: GoogleFonts.alegreyaSc(fontSize: 30),
+                                      style: GoogleFonts.alegreyaSc(fontSize: 27),
              
                                     ),]
                                   )
             ),
           ),
+          Divider(),
           // -------------------------------------2
           GestureDetector(
             onTap: () {
@@ -72,6 +75,7 @@ Step 2: Keeping the movement under control and elbows pulled down and back pull 
               );
             },
             child: Container(
+              padding: EdgeInsets.all(5),
               width: double.infinity,
                                   height: 70,
                                   decoration: BoxDecoration(
@@ -82,15 +86,17 @@ Step 2: Keeping the movement under control and elbows pulled down and back pull 
                                   ),
                                   child: Row(
                                     mainAxisAlignment: MainAxisAlignment.start,
-                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/wings.jpg') ,radius:35,),
+                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/wings.jpg') ,radius:33,),
+                                    SizedBox(width: 5),
                                       Text(
                                       'T Bar Bend Over',
-                                       style: GoogleFonts.alegreyaSc(fontSize: 30),
+                                       style: GoogleFonts.alegreyaSc(fontSize: 27),
              
                                     ),]
                                   )
             ),
           ),
+          Divider(),
           // -------------------------------------------------3
           GestureDetector(
             onTap: () {
@@ -110,6 +116,7 @@ Step 2:Raise th dumbbells vertically towords your chest.Refain from flaring your
               );
             },
             child: Container(
+              padding: EdgeInsets.all(5),
               width: double.infinity,
                                   height: 70,
                                   decoration: BoxDecoration(
@@ -120,15 +127,17 @@ Step 2:Raise th dumbbells vertically towords your chest.Refain from flaring your
                                   ),
                                   child: Row(
                                     mainAxisAlignment: MainAxisAlignment.start,
-                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/wings.jpg') ,radius:35,),
+                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/wings.jpg') ,radius:33,),
+                                    SizedBox(width: 5),
                                       Text(
                                       'DumbbellRow ',
-                                       style: GoogleFonts.alegreyaSc(fontSize: 30),
+                                       style: GoogleFonts.alegreyaSc(fontSize: 27),
              
                                     ),]
                                   )
             ),
           ),
+          Divider(),
           // -------------------------------------------------4
           GestureDetector(
             onTap: () {
@@ -146,6 +155,7 @@ Step 2:Raise the EZ curl bar vertically towards yours chest.Refrain from flaring
               );
             },
             child: Container(
+              padding: EdgeInsets.all(5),
               width: double.infinity,
                                   height: 70,
                                   decoration: BoxDecoration(
@@ -156,10 +166,11 @@ Step 2:Raise the EZ curl bar vertically towards yours chest.Refrain from flaring
                                   ),
                                   child: Row(
                                     mainAxisAlignment: MainAxisAlignment.start,
-                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/wings.jpg') ,radius:35,),
+                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/wings.jpg') ,radius:33,),
+                                    SizedBox(width: 5),
                                       Text(
                                       'Curl Bar-Row  ',
-                                       style: GoogleFonts.alegreyaSc(fontSize: 30),
+                                       style: GoogleFonts.alegreyaSc(fontSize: 27),
              
                                     ),]
                                   )

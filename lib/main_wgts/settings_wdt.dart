@@ -14,9 +14,13 @@ class _SettingsState extends State<Settings> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+              backgroundColor: Color.fromARGB(225, 27, 57, 61),
+        title: Center(child: Text('Settings')),
+      ),
       backgroundColor: Color.fromARGB(225, 27, 57, 61),
       body: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Center(
             child: GestureDetector(
@@ -37,11 +41,15 @@ class _SettingsState extends State<Settings> {
                                   children:[  Icon(Icons.person_pin,size: 50,),
                                     Text(
                                     'PROFILE',
-                                    style: TextStyle(fontSize: 35),
+                                    style: TextStyle(fontSize: 30),
             
                                   ),]
                                 )),
             ),
+            
+          ),
+          SizedBox(
+            height: 27,
           ),
           GestureDetector(
             onTap:() {
@@ -59,9 +67,12 @@ class _SettingsState extends State<Settings> {
                               child: Center(
                                 child: Text(
                                   'ABOUT',
-                                  style: TextStyle(fontSize: 35),
+                                  style: TextStyle(fontSize: 30),
                                 ),
                               )),
+          ),
+           SizedBox(
+            height: 27,
           ),
                             Container(
                              width: 360,
@@ -75,9 +86,12 @@ class _SettingsState extends State<Settings> {
                             child: Center(
                               child: Text(
                                 'EXIT FROM APP',
-                                style: TextStyle(fontSize: 35),
+                                style: TextStyle(fontSize: 30),
                               ),
                             )),
+                             SizedBox(
+            height: 27,
+          ),
                             Container(
                               width: 360,
                               height: 70,
@@ -90,7 +104,7 @@ class _SettingsState extends State<Settings> {
                             child: Center(
                               child: Text(
                                 'RESET',
-                                style: TextStyle(fontSize: 35),
+                                style: TextStyle(fontSize: 30),
                               ),
                             )),
                            

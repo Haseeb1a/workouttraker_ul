@@ -42,20 +42,27 @@ class _HomeExState extends State<HomeEx> {
         
           child: Column(
         children: [
-          CarouselSlider(
-            items: [
-              Image.asset('assets/images/carosela.jpg'),
-              Image.asset('assets/images/caroselb.jpg'),
-              Image.asset('assets/images/caroselc.jpg'),
-              Image.asset('assets/images/caroseld.jpg'),
-            ],
-            options: CarouselOptions(
-              autoPlay: true,
-              autoPlayInterval: Duration(seconds: 3),
-              autoPlayAnimationDuration: Duration(milliseconds: 800),
-              autoPlayCurve: Curves.fastOutSlowIn,
-              pauseAutoPlayOnTouch: true,
-              enlargeCenterPage: false,
+          Container(
+            color: Colors.black,
+            child: CarouselSlider(
+              items: [
+                Image.asset('assets/images/carosela.jpg'),
+                Image.asset('assets/images/caroselb.jpg'),
+                Image.asset('assets/images/caroselc.jpg'),
+                Image.asset('assets/images/caroseld.jpg'),
+              ],
+              options: CarouselOptions(
+                
+                // aspectRatio:16/16 ,
+                // height: 200,
+                autoPlay: true,
+                autoPlayInterval: Duration(seconds: 3),
+                autoPlayAnimationDuration: Duration(milliseconds: 800),
+                autoPlayCurve: Curves.fastOutSlowIn,
+                pauseAutoPlayOnTouch: true,
+                enlargeCenterPage:false,
+                viewportFraction: 0.9,
+              ),
             ),
           ),
           // Expanded(child: Column(

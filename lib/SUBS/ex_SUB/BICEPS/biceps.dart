@@ -33,6 +33,7 @@ Step 2:Keep the elbows stationary and only bring the weight as high as you can w
               );
             },
             child: Container(
+              padding: EdgeInsets.all(5),
                width: double.infinity,
                                   height: 70,
                                   decoration: BoxDecoration(
@@ -43,15 +44,17 @@ Step 2:Keep the elbows stationary and only bring the weight as high as you can w
                                   ),
                                   child: Row(
                                     mainAxisAlignment: MainAxisAlignment.start,
-                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/biceps.jpg') ,radius:35,),
+                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/biceps.jpg') ,radius:33,),
+                                    SizedBox(width: 5,),
                                       Text(
                                       'Curls',
-                                      style: GoogleFonts.alegreyaSc(fontSize: 30),
+                                      style: GoogleFonts.alegreyaSc(fontSize: 27),
              
                                     ),]
                                   )
             ),
           ),
+          Divider(),
           // -------------------------------------2
           GestureDetector(
             onTap: () {
@@ -72,6 +75,7 @@ Step 2:Keep the elbows stationary and only bring the weight as high as you can w
               );
             },
             child: Container(
+              padding: EdgeInsets.all(5),
               width: double.infinity,
                                   height: 70,
                                   decoration: BoxDecoration(
@@ -82,15 +86,17 @@ Step 2:Keep the elbows stationary and only bring the weight as high as you can w
                                   ),
                                   child: Row(
                                     mainAxisAlignment: MainAxisAlignment.start,
-                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/biceps.jpg') ,radius:35,),
+                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/biceps.jpg') ,radius:33,),
+                                    SizedBox(width: 5,),
                                       Text(
                                       'BarBellCurls',
-                                       style: GoogleFonts.alegreyaSc(fontSize: 30),
+                                       style: GoogleFonts.alegreyaSc(fontSize: 27),
              
                                     ),]
                                   )
             ),
           ),
+          Divider(),
           // -------------------------------------------------3
           GestureDetector(
             onTap: () {
@@ -110,6 +116,7 @@ Step 2: Pull the pulley handles upwards until your forearms cross. Hold for one 
               );
             },
             child: Container(
+              padding: EdgeInsets.all(5),
               width: double.infinity,
                                   height: 70,
                                   decoration: BoxDecoration(
@@ -120,15 +127,17 @@ Step 2: Pull the pulley handles upwards until your forearms cross. Hold for one 
                                   ),
                                   child: Row(
                                     mainAxisAlignment: MainAxisAlignment.start,
-                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/biceps.jpg') ,radius:35,),
+                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/biceps.jpg') ,radius:33,),
+                                    SizedBox(width: 5,),
                                       Text(
-                                      'Lo  pulley carle crossover',
-                                       style: GoogleFonts.alegreyaSc(fontSize: 30),
+                                      'Lopulley carle cross',
+                                       style: GoogleFonts.alegreyaSc(fontSize: 27),
              
                                     ),]
                                   )
             ),
           ),
+          Divider(),
           // -------------------------------------------------4
           GestureDetector(
             onTap: () {
@@ -148,6 +157,7 @@ Step 3:Bending at the elbow, curl the dumbbell up to shoulder level and pause mo
               );
             },
             child: Container(
+              padding: EdgeInsets.all(5),
               width: double.infinity,
                                   height: 70,
                                   decoration: BoxDecoration(
@@ -158,15 +168,17 @@ Step 3:Bending at the elbow, curl the dumbbell up to shoulder level and pause mo
                                   ),
                                   child: Row(
                                     mainAxisAlignment: MainAxisAlignment.start,
-                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/biceps.jpg') ,radius:35,),
+                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/biceps.jpg') ,radius:33,),
+                                    SizedBox(width: 5,),
                                       Text(
                                       'Dumbbellbiceps ',
-                                       style: GoogleFonts.alegreyaSc(fontSize: 30),
+                                       style: GoogleFonts.alegreyaSc(fontSize: 27),
              
                                     ),]
                                   )
             ),
           ),
+          Divider(),
           // ----------------------------------------5
            GestureDetector(
             onTap: () {
@@ -186,6 +198,7 @@ Step 3:Raise the EZ curl bar vertically towards yours chest.Refrain from flaring
               );
             },
             child: Container(
+              padding: EdgeInsets.all(5),
               width: double.infinity,
                                   height: 70,
                                   decoration: BoxDecoration(
@@ -196,10 +209,11 @@ Step 3:Raise the EZ curl bar vertically towards yours chest.Refrain from flaring
                                   ),
                                   child: Row(
                                     mainAxisAlignment: MainAxisAlignment.start,
-                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/biceps.jpg') ,radius:35,),
+                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/biceps.jpg') ,radius:33,),
+                                    SizedBox(width: 5,),
                                       Text(
                                       'Concentration ',
-                                       style: GoogleFonts.alegreyaSc(fontSize: 30),
+                                       style: GoogleFonts.alegreyaSc(fontSize: 27),
              
                                     ),]
                                   )

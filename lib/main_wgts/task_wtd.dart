@@ -2,6 +2,8 @@
 // -------------------------------------------------------------------------------------------
 import 'package:flutter/material.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
+import 'package:workouttraker/dbfunction/functions/db_functions.dart';
+import 'package:workouttraker/dbfunction/model/workoutmodel1.dart';
 
 class Task extends StatefulWidget {
   const Task({super.key});
@@ -11,9 +13,14 @@ class Task extends StatefulWidget {
 }
 
 class _TaskState extends State<Task> {
+  // double screenWidth = MediaQuery.of(context).size.width;
+  //   double screenHeight = MediaQuery.of(context).size.height;
   bool isChecked = false;
   @override
   Widget build(BuildContext context) {
+    workoutLsitNotifier.notifyListeners();
+    double screenWidth = MediaQuery.of(context).size.width;
+    double screenHeight = MediaQuery.of(context).size.height;
     return Scaffold(
       appBar: AppBar(
          backgroundColor: Color.fromARGB(225, 27, 57, 61),
@@ -46,153 +53,170 @@ class _TaskState extends State<Task> {
       ),
       body: Card(
         // padding: const EdgeInsets.all(5),
-        child: ListView.separated(itemBuilder: (context, index) {
-          return Slidable (
-            endActionPane: ActionPane(motion: DrawerMotion(), children: [
-            SlidableAction(onPressed: (context) {
+        child: ValueListenableBuilder(
+          valueListenable: workoutLsitNotifier,
+          builder:(BuildContext ctx , List<Workoutmodel> workoutlist, Widget? child) {
+            return ListView.separated(itemBuilder: (ctx, index) {
+              final data =workoutlist[index];
+            return Slidable (
+              endActionPane: ActionPane(motion: DrawerMotion(), children: [
+              SlidableAction(onPressed: (context) {
+                if(data.id!=null){
+deletetask(data.id!);
+                }else{
+                  print('Task id is null');
+                }
+               
+              },
+        
+              icon: Icons.delete_forever_rounded,
+              backgroundColor: Color.fromARGB(225, 27, 57, 61),
+              foregroundColor: Colors.red,
               
-            },
-
-            icon: Icons.delete_forever_rounded,
-            backgroundColor: Color.fromARGB(225, 27, 57, 61),
-            foregroundColor: Colors.red,
-      
-            ),
-            SlidableAction(onPressed: (context) {
+              ),
+              SlidableAction(onPressed: (context) {
+                
+              },
+              icon: Icons.edit,
+             backgroundColor: Color.fromARGB(225, 27, 57, 61),
+             foregroundColor: Color.fromARGB(255, 255, 255, 255),
               
-            },
-            icon: Icons.edit,
-           backgroundColor: Color.fromARGB(225, 27, 57, 61),
-           foregroundColor: Color.fromARGB(255, 255, 255, 255),
-      
-            ),
-            ] ),
-            child: SizedBox(
-              height: 220,
-              width: double.infinity,
-              child:  Card(
-                    
-                    elevation: 20,
-                    child: Container(
+              ),
+              ] ),
+              child: SizedBox(
+                height: 220,
+                width: double.infinity,
+                child:  Card(
                       
-                      
-                      padding: EdgeInsets.only(right: 20),
-              
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10),
-                          color: Color.fromARGB(255, 207, 204, 215),
-                          border:
-                              Border.all(color: Color.fromARGB(255, 207, 198, 198))),
-              
-                      child: Column(
-                        children: [
-                          Padding(
-                            padding: EdgeInsets.only(left: 35, top: 20),
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      elevation: 20,
+                      child: Container(
+                        
+                        
+                        padding: EdgeInsets.only(right: 20),
+                
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10),
+                            color: Color.fromARGB(255, 207, 204, 215),
+                            border:
+                                Border.all(color: Color.fromARGB(255, 207, 198, 198))),
+                
+                        child: Column(
+                          children: [
+                            
+                            Padding(
+                              padding: EdgeInsets.only(left: 35, top: 20),
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Text(
+                                    data.typename,
+                                    style: TextStyle( fontSize: screenWidth*0.06),
+                                  ),
+                                  
+        
+                                  Checkbox(
+                                    
+                                      value: isChecked,
+                                      onChanged: (bool? value) {
+                                        setState(() {
+                                          isChecked = value!;
+                                        });
+                                      })
+                                ],
+                              ),
+                            ),
+                            SizedBox(
+                              height: 20,
+                            ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                               children: [
-                                Text(
-                                  'Inline Bench Sit-Ups',
-                                  style: TextStyle(fontSize: 30),
+                                Padding(
+                                  padding: EdgeInsets.only(left: 0, top: 10),
                                 ),
-                                Checkbox(
-                                    value: isChecked,
-                                    onChanged: (bool? value) {
-                                      setState(() {
-                                        isChecked = value!;
-                                      });
-                                    })
+                                Container(
+                                     width:screenHeight*0.09 ,
+                                    height: 40,
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(10),
+                                      color: Color.fromARGB(255, 255, 255, 255),
+                                      border: Border.all(
+                                          color: Color.fromARGB(255, 255, 255, 255)),
+                                    ),
+                                    child: Center(
+                                      child: Text(
+                                        data.weight,
+                                        style: TextStyle(fontSize: 20),
+                                      ),
+                                    )),
+                                // SizedBox(
+                                //   width: 17,
+                                // ),
+                                Container(
+                                    width:screenHeight*0.12 ,
+                                    height: 40,
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(10),
+                                      color: Color.fromARGB(255, 255, 255, 255),
+                                      border: Border.all(
+                                          color: Color.fromARGB(255, 255, 255, 255)),
+                                    ),
+                                    child: Center(
+                                      child: Text(
+                                        data.weight,
+                                        style: TextStyle(fontSize: 20),
+                                      ),
+                                    )),
+                                // SizedBox(
+                                //   width: 17,
+                                // ),
+                                Container(
+                                    width:screenHeight*0.13 ,
+                                    height: 40,
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(10),
+                                      color: Color.fromARGB(255, 255, 255, 255),
+                                      border: Border.all(
+                                          color: Color.fromARGB(255, 255, 255, 255)),
+                                    ),
+                                    child: Center(
+                                      child: Text(
+                                        data.weight,
+                                        style: TextStyle(fontSize: 20),
+                                      ),
+                                    )),
                               ],
                             ),
-                          ),
-                          SizedBox(
-                            height: 30,
-                          ),
-                          Row(
-                            children: [
-                              Padding(
-                                padding: EdgeInsets.only(left: 35, top: 10),
-                              ),
-                              Container(
-                                  width: 70,
-                                  height: 40,
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(10),
-                                    color: Color.fromARGB(255, 255, 255, 255),
-                                    border: Border.all(
-                                        color: Color.fromARGB(255, 255, 255, 255)),
+                            Padding(
+                              padding: EdgeInsets.only(left: 35, top: 35),
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Text(
+                                    'AUG 10',
+                                    style: TextStyle(fontSize: 20),
                                   ),
-                                  child: Center(
-                                    child: Text(
-                                      '20KG',
-                                      style: TextStyle(fontSize: 20),
-                                    ),
-                                  )),
-                              SizedBox(
-                                width: 40,
+                                  Text('week'),
+                                ],
                               ),
-                              Container(
-                                  width: 100,
-                                  height: 40,
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(10),
-                                    color: Color.fromARGB(255, 255, 255, 255),
-                                    border: Border.all(
-                                        color: Color.fromARGB(255, 255, 255, 255)),
-                                  ),
-                                  child: Center(
-                                    child: Text(
-                                      '20 REPS',
-                                      style: TextStyle(fontSize: 20),
-                                    ),
-                                  )),
-                              SizedBox(
-                                width: 40,
-                              ),
-                              Container(
-                                  width: 90,
-                                  height: 40,
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(10),
-                                    color: Color.fromARGB(255, 255, 255, 255),
-                                    border: Border.all(
-                                        color: Color.fromARGB(255, 255, 255, 255)),
-                                  ),
-                                  child: Center(
-                                    child: Text(
-                                      '20 SETS',
-                                      style: TextStyle(fontSize: 20),
-                                    ),
-                                  )),
-                            ],
-                          ),
-                          Padding(
-                            padding: EdgeInsets.only(left: 35, top: 35),
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text(
-                                  'AUG 10',
-                                  style: TextStyle(fontSize: 20),
-                                ),
-                                Text('week'),
-                              ],
                             ),
-                          ),
-                        ],
+                          ],
+                        ),
+                        // color: Colors.green,
+                        height: 200,
+                        width: 450,
                       ),
-                      // color: Colors.green,
-                      height: 200,
-                      width: 450,
                     ),
-                  ),
-            ),
-          );
-        }, 
-        separatorBuilder:(cxt, index) {
-          return Divider(thickness: 1,);
-        },
-         itemCount: 3),
+              ),
+            );
+          }, 
+          separatorBuilder:(cxt, index) {
+            return Divider(thickness: 1,);
+          },
+           itemCount: workoutlist.length);
+          },
+        
+        ),
       ),
     );
   }

@@ -33,6 +33,7 @@ Step 2:Raise your upper body upward while keeping your lower back on the bench. 
               );
             },
             child: Container(
+              padding: EdgeInsets.all(5),
                width: double.infinity,
                                   height: 70,
                                   decoration: BoxDecoration(
@@ -44,6 +45,7 @@ Step 2:Raise your upper body upward while keeping your lower back on the bench. 
                                   child: Row(
                                     mainAxisAlignment: MainAxisAlignment.start,
                                     children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/all.jpg') ,radius:35,),
+                                    SizedBox(width: 5,),
                                       Text(
                                       'lineBenchSitUPLast',
                                       style: GoogleFonts.alegreyaSc(fontSize: 30),
@@ -52,6 +54,7 @@ Step 2:Raise your upper body upward while keeping your lower back on the bench. 
                                   )
             ),
           ),
+          Divider(),
           // -------------------------------------2
           GestureDetector(
             onTap: () {
@@ -72,6 +75,7 @@ Step 2:Use your forearm to lift your upper body of the ground. The other arm is 
               );
             },
             child: Container(
+              padding: EdgeInsets.all(5),
               width: double.infinity,
                                   height: 70,
                                   decoration: BoxDecoration(
@@ -82,15 +86,17 @@ Step 2:Use your forearm to lift your upper body of the ground. The other arm is 
                                   ),
                                   child: Row(
                                     mainAxisAlignment: MainAxisAlignment.start,
-                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/all.jpg') ,radius:35,),
+                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/all.jpg') ,radius:33,),
+                                    SizedBox(width: 5,),
                                       Text(
                                       'SideBridge',
-                                       style: GoogleFonts.alegreyaSc(fontSize: 30),
+                                       style: GoogleFonts.alegreyaSc(fontSize: 27),
              
                                     ),]
                                   )
             ),
           ),
+                Divider(),
           // -------------------------------------------------3
           GestureDetector(
             onTap: () {
@@ -112,6 +118,7 @@ Step 4: Hold the position for two seconds, inhale and return the weight to the f
               );
             },
             child: Container(
+              padding: EdgeInsets.all(5),
               width: double.infinity,
                                   height: 70,
                                   decoration: BoxDecoration(
@@ -122,15 +129,17 @@ Step 4: Hold the position for two seconds, inhale and return the weight to the f
                                   ),
                                   child: Row(
                                     mainAxisAlignment: MainAxisAlignment.start,
-                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/all.jpg') ,radius:35,),
+                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/all.jpg') ,radius:33,),
+                                    SizedBox(width: 5,),
                                       Text(
                                       'DeadLiftLast',
-                                       style: GoogleFonts.alegreyaSc(fontSize: 30),
+                                       style: GoogleFonts.alegreyaSc(fontSize: 27),
              
                                     ),]
                                   )
             ),
           ),
+                Divider(),
           // -------------------------------------------------4
           GestureDetector(
             onTap: () {
@@ -148,6 +157,7 @@ Step 2: Hold your feet together or very slightly spread: Inhale and bend your el
               );
             },
             child: Container(
+              padding: EdgeInsets.all(5),
               width: double.infinity,
                                   height: 70,
                                   decoration: BoxDecoration(
@@ -158,15 +168,17 @@ Step 2: Hold your feet together or very slightly spread: Inhale and bend your el
                                   ),
                                   child: Row(
                                     mainAxisAlignment: MainAxisAlignment.start,
-                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/all.jpg') ,radius:35,),
+                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/all.jpg') ,radius:33,),
+                                    SizedBox(width: 5,),
                                       Text(
                                       'Push -Up ',
-                                       style: GoogleFonts.alegreyaSc(fontSize: 30),
+                                       style: GoogleFonts.alegreyaSc(fontSize: 27),
              
                                     ),]
                                   )
             ),
           ),
+                Divider(),
           // ---------------------5
            GestureDetector(
             onTap: () {
@@ -186,6 +198,7 @@ Step 3: Straighten your arms, raising the dumbbell back to the start position.
               );
             },
             child: Container(
+              padding: EdgeInsets.all(5),
               width: double.infinity,
                                   height: 70,
                                   decoration: BoxDecoration(
@@ -196,17 +209,20 @@ Step 3: Straighten your arms, raising the dumbbell back to the start position.
                                   ),
                                   child: Row(
                                     mainAxisAlignment: MainAxisAlignment.start,
-                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/all.jpg') ,radius:35,),
+                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/all.jpg') ,radius:33,),
+                                    SizedBox(width: 5,),
                                       Text(
-                                      'StabilityBallPullOverLast',
-                                       style: GoogleFonts.alegreyaSc(fontSize: 30),
+                                      'StabilityBallPullOver',
+                                       style: GoogleFonts.alegreyaSc(fontSize: 27),
              
                                     ),]
                                   )
             ),
           ),
+                Divider(),
           //-------------------------------6
            GestureDetector(
+            
             onTap: () {
               Navigator.push(
                 context,
@@ -225,6 +241,7 @@ Step 3: Hold the top most position, then gradually lower them to the starting po
               );
             },
             child: Container(
+              padding: EdgeInsets.all(5),
               width: double.infinity,
                                   height: 70,
                                   decoration: BoxDecoration(
@@ -235,10 +252,11 @@ Step 3: Hold the top most position, then gradually lower them to the starting po
                                   ),
                                   child: Row(
                                     mainAxisAlignment: MainAxisAlignment.start,
-                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/all.jpg') ,radius:35,),
+                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/all.jpg') ,radius:33,),
+                                    SizedBox(width: 5,),
                                       Text(
                                       'Dumeellshrugs ',
-                                       style: GoogleFonts.alegreyaSc(fontSize: 30),
+                                       style: GoogleFonts.alegreyaSc(fontSize: 27),
              
                                     ),]
                                   )

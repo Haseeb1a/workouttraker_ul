@@ -33,6 +33,7 @@ Step 2: Once you have lifted the weight off of the rack, the bar will be directl
               );
             },
             child: Container(
+              padding: EdgeInsets.all(5),
                width: double.infinity,
                                   height: 70,
                                   decoration: BoxDecoration(
@@ -43,15 +44,17 @@ Step 2: Once you have lifted the weight off of the rack, the bar will be directl
                                   ),
                                   child: Row(
                                     mainAxisAlignment: MainAxisAlignment.start,
-                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/chest (2).jpg') ,radius:35,),
+                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/chest (2).jpg') ,radius:33,),
+                                    SizedBox(width: 5,),
                                       Text(
                                       'BenchPresses',
-                                      style: GoogleFonts.alegreyaSc(fontSize: 30),
+                                      style: GoogleFonts.alegreyaSc(fontSize: 27),
              
                                     ),]
                                   )
             ),
           ),
+          Divider(),
           // -------------------------------------2
           GestureDetector(
             onTap: () {
@@ -72,6 +75,7 @@ Step 2:Hold your feet together or very slightly spread: Inhale and bend your elb
               );
             },
             child: Container(
+              padding: EdgeInsets.all(5),
               width: double.infinity,
                                   height: 70,
                                   decoration: BoxDecoration(
@@ -82,15 +86,17 @@ Step 2:Hold your feet together or very slightly spread: Inhale and bend your elb
                                   ),
                                   child: Row(
                                     mainAxisAlignment: MainAxisAlignment.start,
-                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/chest (2).jpg') ,radius:35,),
+                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/chest (2).jpg') ,radius:33,),
+                                       SizedBox(width: 5,),
                                       Text(
                                       'Push-ups',
-                                       style: GoogleFonts.alegreyaSc(fontSize: 30),
+                                       style: GoogleFonts.alegreyaSc(fontSize: 27),
              
                                     ),]
                                   )
             ),
           ),
+          Divider(),
           // -------------------------------------------------3
           GestureDetector(
             onTap: () {
@@ -111,6 +117,7 @@ Step 2:Lower yourself until your chest is inches away from the floor by bending 
               );
             },
             child: Container(
+              padding: EdgeInsets.all(5),
               width: double.infinity,
                                   height: 70,
                                   decoration: BoxDecoration(
@@ -121,15 +128,17 @@ Step 2:Lower yourself until your chest is inches away from the floor by bending 
                                   ),
                                   child: Row(
                                     mainAxisAlignment: MainAxisAlignment.start,
-                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/chest (2).jpg') ,radius:35,),
+                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/chest (2).jpg') ,radius:33,),
+                                       SizedBox(width: 5,),
                                       Text(
-                                      'Bodyweight Push up touch',
-                                       style: GoogleFonts.alegreyaSc(fontSize: 30),
+                                      'Bodyweight Push up ',
+                                       style: GoogleFonts.alegreyaSc(fontSize: 27),
              
                                     ),]
                                   )
             ),
           ),
+          Divider(),
           // --------------------------------------4
                    GestureDetector(
             onTap: () {
@@ -151,6 +160,7 @@ Step 3:Extend one arm after every time your come up. Hold for one second. Return
               );
             },
             child: Container(
+              padding: EdgeInsets.all(5),
               width: double.infinity,
                                   height: 70,
                                   decoration: BoxDecoration(
@@ -161,15 +171,17 @@ Step 3:Extend one arm after every time your come up. Hold for one second. Return
                                   ),
                                   child: Row(
                                     mainAxisAlignment: MainAxisAlignment.start,
-                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/chest (2).jpg') ,radius:35,),
+                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/chest (2).jpg') ,radius:33,),
+                                       SizedBox(width: 5,),
                                       Text(
                                       'BodyPushUpExtension',
-                                       style: GoogleFonts.alegreyaSc(fontSize: 30),
+                                       style: GoogleFonts.alegreyaSc(fontSize: 27),
              
                                     ),]
                                   )
             ),
           ),
+          Divider(),
           // ------------------------------------5
           GestureDetector(
             onTap: () {
@@ -188,6 +200,7 @@ Step 2:The barbell should slightly touch your chest at the end of the movement.
               );
             },
             child: Container(
+              padding: EdgeInsets.all(5),
               width: double.infinity,
                                   height: 70,
                                   decoration: BoxDecoration(
@@ -198,10 +211,11 @@ Step 2:The barbell should slightly touch your chest at the end of the movement.
                                   ),
                                   child: Row(
                                     mainAxisAlignment: MainAxisAlignment.start,
-                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/all.jpg') ,radius:35,),
+                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/chest (2).jpg') ,radius:33,),
+                                       SizedBox(width: 5,),
                                       Text(
                                       'BarBellBenchPress',
-                                       style: GoogleFonts.alegreyaSc(fontSize: 30),
+                                       style: GoogleFonts.alegreyaSc(fontSize: 27),
              
                                     ),]
                                   )

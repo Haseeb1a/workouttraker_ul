@@ -34,6 +34,7 @@ Step 3: Pause at the top, then slowly lower your heels back down.
               );
             },
             child: Container(
+              padding: EdgeInsets.all(5),
                width: double.infinity,
                                   height: 70,
                                   decoration: BoxDecoration(
@@ -44,15 +45,17 @@ Step 3: Pause at the top, then slowly lower your heels back down.
                                   ),
                                   child: Row(
                                     mainAxisAlignment: MainAxisAlignment.start,
-                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/calf.jpg') ,radius:35,),
+                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/calf.jpg') ,radius:33,),
+                                     SizedBox(width:5),
                                       Text(
                                       'ToeRaises',
-                                      style: GoogleFonts.alegreyaSc(fontSize: 30),
+                                      style: GoogleFonts.alegreyaSc(fontSize: 27),
              
                                     ),]
                                   )
             ),
           ),
+            Divider(),
           // -------------------------------------2
           GestureDetector(
             onTap: () {
@@ -73,6 +76,7 @@ Step 3:  Allow your knees to bend 45 degrees when your land, then immediately ju
               );
             },
             child: Container(
+              padding: EdgeInsets.all(5),
               width: double.infinity,
                                   height: 70,
                                   decoration: BoxDecoration(
@@ -83,15 +87,17 @@ Step 3:  Allow your knees to bend 45 degrees when your land, then immediately ju
                                   ),
                                   child: Row(
                                     mainAxisAlignment: MainAxisAlignment.start,
-                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/calf.jpg') ,radius:35,),
+                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/calf.jpg') ,radius:33,),
+                                     SizedBox(width:5),
                                       Text(
                                       'Dumbbelcalf',
-                                       style: GoogleFonts.alegreyaSc(fontSize: 30),
+                                       style: GoogleFonts.alegreyaSc(fontSize: 27),
              
                                     ),]
                                   )
             ),
           ),
+            Divider(),
           // -------------------------------------------------3
           GestureDetector(
             onTap: () {
@@ -111,6 +117,7 @@ Step 2: Raise your calves by tiptoeing. Hold for one second. Lower your calves b
               );
             },
             child: Container(
+              padding: EdgeInsets.all(5),
               width: double.infinity,
                                   height: 70,
                                   decoration: BoxDecoration(
@@ -121,10 +128,11 @@ Step 2: Raise your calves by tiptoeing. Hold for one second. Lower your calves b
                                   ),
                                   child: Row(
                                     mainAxisAlignment: MainAxisAlignment.start,
-                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/calf.jpg') ,radius:35,),
+                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/calf.jpg') ,radius:33,),
+                                    SizedBox(width:5),
                                       Text(
                                       'StandingBarbell ',
-                                       style: GoogleFonts.alegreyaSc(fontSize: 30),
+                                       style: GoogleFonts.alegreyaSc(fontSize: 27),
              
                                     ),]
                                   )

@@ -18,10 +18,10 @@ class WorkoutmodelAdapter extends TypeAdapter<Workoutmodel> {
     };
     return Workoutmodel(
       typename: fields[0] as String,
-      weight: fields[1] as int,
-      reps: fields[2] as int,
-      sets: fields[3] as int,
-      dateandtime: fields[4] as int,
+      weight: fields[1] as String,
+      reps: fields[2] as String,
+      sets: fields[3] as String,
+      // dateandtime: fields[4] as int,
     );
   }
 
@@ -36,9 +36,9 @@ class WorkoutmodelAdapter extends TypeAdapter<Workoutmodel> {
       ..writeByte(2)
       ..write(obj.reps)
       ..writeByte(3)
-      ..write(obj.sets)
-      ..writeByte(4)
-      ..write(obj.dateandtime);
+      ..write(obj.sets);
+      // ..writeByte(4)
+      // ..write(obj.dateandtime);
   }
 
   @override

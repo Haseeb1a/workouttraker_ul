@@ -1,285 +1,11 @@
-// import 'package:flutter/material.dart';
 
-// class Abs extends StatelessWidget {
-//   const Abs({super.key});
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return  Scaffold(
-//       appBar: AppBar(),
-//       body: Column(
-//         children: [
-//            Center(
-//              child: GestureDetector(
-//               onTap: () =>Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => InclineBenchSitUp(),)) ,
-//                child: Container(
-//                                   width: double.infinity,
-//                                   height: 70,
-//                                   decoration: BoxDecoration(
-//                                     borderRadius: BorderRadius.circular(10),
-//                                     color: Color.fromARGB(255, 255, 255, 255),
-//                                     border: Border.all(
-//                                         color: Color.fromARGB(255, 255, 255, 255)),
-//                                   ),
-//                                   child: Row(
-//                                     mainAxisAlignment: MainAxisAlignment.start,
-//                                     children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/all.jpg') ,radius:35,),
-//                                       Text(
-//                                       'Incline Bench Sit-Up',
-//                                       style: TextStyle(fontSize: 35),
-                        
-//                                     ),]
-//                                   )),
-//              ),
-                                
-//            ),
-          
-        
-//         GestureDetector(
-//            onTap: () =>Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) =>Crunches(),)) ,
-//           child: Container(
-//                                   width: double.infinity,
-//                                   height: 70,
-//                                   decoration: BoxDecoration(
-//                                     borderRadius: BorderRadius.circular(10),
-//                                     color: Color.fromARGB(255, 255, 255, 255),
-//                                     border: Border.all(
-//                                         color: Color.fromARGB(255, 255, 255, 255)),
-//                                   ),
-//                                   child: Row(
-//                                     mainAxisAlignment: MainAxisAlignment.start,
-//                                     children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/all.jpg') ,radius:35,),
-//                                       Text(
-//                                       'Crunches',
-//                                       style: TextStyle(fontSize: 35),
-             
-//                                     ),]
-//                                   )
-//                                   ),
-//         ),
-//                                 GestureDetector(
-//                                    onTap: () =>Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) =>TwistiingHipRaise(),)) ,
-//                                   child: Container(
-//                                   width: double.infinity,
-//                                   height: 70,
-//                                   decoration: BoxDecoration(
-//                                     borderRadius: BorderRadius.circular(10),
-//                                     color: Color.fromARGB(255, 255, 255, 255),
-//                                     border: Border.all(
-//                                         color: Color.fromARGB(255, 255, 255, 255)),
-//                                   ),
-//                                   child: Row(
-//                                     mainAxisAlignment: MainAxisAlignment.start,
-//                                     children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/all.jpg') ,radius:35,),
-//                                       Text(
-//                                       'Twistiing Hip-Raise',
-//                                       style: TextStyle(fontSize: 35),
-                                           
-//                                     ),]
-//                                   )),
-//                                 ),
-//                                 GestureDetector(
-//                                    onTap: () =>Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) =>TwistiingHipRaise2(),)) ,
-//                                   child: Container(
-//                                   width: double.infinity,
-//                                   height: 70,
-//                                   decoration: BoxDecoration(
-//                                     borderRadius: BorderRadius.circular(10),
-//                                     color: Color.fromARGB(255, 255, 255, 255),
-//                                     border: Border.all(
-//                                         color: Color.fromARGB(255, 255, 255, 255)),
-//                                   ),
-//                                   child: Row(
-//                                     mainAxisAlignment: MainAxisAlignment.start,
-//                                     children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/all.jpg') ,radius:35,),
-//                                       Text(
-//                                       'wistiing Hip-Raise 2',
-//                                       style: TextStyle(fontSize: 35),
-                                           
-//                                     ),]
-//                                   )),
-//                                 ),],
-//       ),
-//     );
-//   }
-// }
-// // 1----------------------------------------------
-// class InclineBenchSitUp extends StatelessWidget {
-//   const InclineBenchSitUp({super.key});
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return  Scaffold(
-//       body: Column(
-//         crossAxisAlignment: CrossAxisAlignment.start,
-//         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-//         children: [
-//           Center(child: SizedBox(child: Image.asset('assets/images/steps.jpg',fit: BoxFit.fill,),)),
-
-//           Center(child: Text('Muscle :Rectus Abdominis',style: TextStyle(fontSize: 20),)),
-//           Text(
-//           'Step 1: Lie back in the decline bench Position hands overhead.kness are bent',textAlign: TextAlign.start,
-          
-//           style: TextStyle(fontSize: 34,),
-//           ),
-//            Center(
-//             child: Text(
-//             'Step 2: Raise your upper body upward while keeping your lower back on the bench .Hold for one second .Return to starting position ',
-          
-//             style: TextStyle(fontSize: 34,),
-//           ),
-//           ),
-//           SizedBox(height:20 ,)
-//         ],
-//       ),
-//     );
-//   }
-// }
-// // 2----------------------------------------------
-// class Crunches extends StatelessWidget {
-//   const Crunches({super.key});
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       body:  Column(
-//         crossAxisAlignment: CrossAxisAlignment.start,
-//         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-//         children: [
-//           Center(child: SizedBox(child: Image.asset('assets/images/crunchesfull.jpg',fit: BoxFit.fill,),)),
-
-//           Center(child: Text('Muscle :Rectus Abdominis',style: TextStyle(fontSize: 20),)),
-//           Text(
-//           'Step 1: While lying on your back Straigten your legs,raise your heels an inch off the floor,and place your hands by your sides',textAlign: TextAlign.start,
-          
-//           style: TextStyle(fontSize: 34,),
-//           ),
-//            Center(
-//             child: Text(
-//             'Step 2:Keeping your arms parallel to the floor lift your torso and legs so they form a e.As yourself ,bend your knees and pull them up torward your chest ',
-          
-//             style: TextStyle(fontSize: 34,),
-//           ),
-//           ),
-//           SizedBox(height:20 ,)
-//         ],
-//       ),
-
-//     );
-//   }
-// }
-// // 3----------------------------------------------
-// class TwistiingHipRaise extends StatelessWidget {
-//   const TwistiingHipRaise({super.key});
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return  Scaffold(
-//       body:   Column(
-//         crossAxisAlignment: CrossAxisAlignment.start,
-//         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-//         children: [
-//           Center(child: SizedBox(child: Image.asset('assets/images/crunchesfull.jpg',fit: BoxFit.fill,),)),
-
-//           Center(child: Text('Muscle :Rectus Abdominis',style: TextStyle(fontSize: 20),)),
-//           Text(
-//           'Step 1: Lie on a banch with legs extended straight.and hold on to the top of the bench.',textAlign: TextAlign.start,
-          
-//           style: TextStyle(fontSize: 34,),
-//           ),
-//            Center(
-//             child: Text(
-//             'Step 2:Raise your legs straight up,slighty lifting your lower back off the bench. ',
-          
-//             style: TextStyle(fontSize: 34,),
-//           ),
-          
-//           ),
-          
-//            Center(
-//             child: Text(
-//             'Step 3:Hold for a fee seconds,then lower your legs back down to the start postion. Keep your legs straight throughout the motion ',
-          
-//             style: TextStyle(fontSize:34,),
-//           ),
-          
-//           ),
-//           SizedBox(height:1 ,)
-//         ],
-//       ),
-//     );
-//   }
-// }
-// // 4----------------------------------------------
-// class TwistiingHipRaise2 extends StatelessWidget {
-//   const TwistiingHipRaise2({super.key});
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       body: Column(
-//         crossAxisAlignment: CrossAxisAlignment.start,
-//         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-//         children: [
-//           Center(child: SizedBox(child: Image.asset('assets/images/crunchesfull.jpg',fit: BoxFit.fill,),)),
-
-//           Center(child: Text('Muscle :Rectus Abdominis',style: TextStyle(fontSize: 20),)),
-//           Text(
-//           'Step 1: Lie on your back with your hands underneth you tailbone and have yours legs straight upward,as illustrated',textAlign: TextAlign.start,
-          
-//           style: TextStyle(fontSize: 34,),
-//           ),
-//            Center(
-//             child: Text(
-//             'Step 2: Pull your navel inward and flex your glutes as you lift your hips just a few inches the floor.then lower your hips ',
-          
-//             style: TextStyle(fontSize: 34,),
-//           ),
-//           ),
-//           SizedBox(height:20 ,)
-//         ],
-//       ),
-//     );
-//   }
-// }
-// // 5-------------------------------------------------------
-// class BodyweightSitUp extends StatelessWidget {
-//   const BodyweightSitUp({super.key});
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       body: 
-//       Column(
-//         crossAxisAlignment: CrossAxisAlignment.start,
-//         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-//         children: [
-//           Center(child: SizedBox(child: Image.asset('assets/images/crunchesfull.jpg',fit: BoxFit.fill,),)),
-
-//           Center(child: Text('Muscle Group :Rectus Abdominis',style: TextStyle(fontSize: 20),)),
-//           Text(
-//           'Step 1: Let back on the floor .Put hands behind your .Knees are bent and feet are on the floor.',textAlign: TextAlign.start,
-          
-//           style: TextStyle(fontSize: 34,),
-//           ),
-//            Center(
-//             child: Text(
-//             'Step 2:Raise your upper body upward. Hold for one second.Return to your starting postion.',
-          
-//             style: TextStyle(fontSize: 34,),
-//           ),
-//           ),
-//           SizedBox(height:20 ,)
-//         ],
-//       ),
-//     );
-//   }
-// }
 // -------------------------------------------------------------------------------------------------------------------------
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:workouttraker/SUBS/other_SUB/edit.dart';
+import 'package:workouttraker/dbfunction/functions/db_functions.dart';
+import 'package:workouttraker/dbfunction/model/workoutmodel1.dart';
 import 'package:workouttraker/main_wgts/bottom_main.dart';
 import 'package:workouttraker/main_wgts/task_wtd.dart';
 
@@ -312,7 +38,9 @@ Step 2: Raise your upper body upward while keeping your lower back on the bench 
                 ),
               );
             },
+            
             child: Container(
+              padding: EdgeInsets.all(5),
                width: double.infinity,
                                   height: 70,
                                   decoration: BoxDecoration(
@@ -323,15 +51,20 @@ Step 2: Raise your upper body upward while keeping your lower back on the bench 
                                   ),
                                   child: Row(
                                     mainAxisAlignment: MainAxisAlignment.start,
-                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/131-1319291_six-pack-abs-gym-muscles-clipart-sticker-cartoon.png') ,radius:35,),
+                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/131-1319291_six-pack-abs-gym-muscles-clipart-sticker-cartoon.png') ,radius:33,),
+                                     SizedBox(
+                                      width: 5,
+                                    ),
+                                      
                                       Text(
                                       'Incline Bench Sit-Up',
-                                      style: GoogleFonts.alegreyaSc(fontSize: 30),
+                                      style: GoogleFonts.alegreyaSc(fontSize: 27),
              
                                     ),]
                                   )
             ),
           ),
+          Divider(),
           // -------------------------------------2
           GestureDetector(
             onTap: () {
@@ -351,6 +84,7 @@ Step 2: Raise your upper body upward while keeping your lower back on the bench 
               );
             },
             child: Container(
+              padding: EdgeInsets.all(5),
               width: double.infinity,
                                   height: 70,
                                   decoration: BoxDecoration(
@@ -361,15 +95,19 @@ Step 2: Raise your upper body upward while keeping your lower back on the bench 
                                   ),
                                   child: Row(
                                     mainAxisAlignment: MainAxisAlignment.start,
-                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/131-1319291_six-pack-abs-gym-muscles-clipart-sticker-cartoon.png') ,radius:35,),
+                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/131-1319291_six-pack-abs-gym-muscles-clipart-sticker-cartoon.png') ,radius:33,),
+                                    SizedBox(
+                                      width: 5,
+                                    ),
                                       Text(
                                       'Crunches',
-                                       style: GoogleFonts.alegreyaSc(fontSize: 30),
+                                       style: GoogleFonts.alegreyaSc(fontSize: 27),
              
                                     ),]
                                   )
             ),
           ),
+           Divider(),
           // -------------------------------------------------3
           GestureDetector(
             onTap: () {
@@ -389,6 +127,7 @@ Step 3:Hold for a fee seconds,then lower your legs back down to the start postio
               );
             },
             child: Container(
+              padding: EdgeInsets.all(5),
               width: double.infinity,
                                   height: 70,
                                   decoration: BoxDecoration(
@@ -399,15 +138,19 @@ Step 3:Hold for a fee seconds,then lower your legs back down to the start postio
                                   ),
                                   child: Row(
                                     mainAxisAlignment: MainAxisAlignment.start,
-                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/131-1319291_six-pack-abs-gym-muscles-clipart-sticker-cartoon.png') ,radius:35,),
+                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/131-1319291_six-pack-abs-gym-muscles-clipart-sticker-cartoon.png') ,radius:33,),
+                                     SizedBox(
+                                      width: 5,
+                                    ),
                                       Text(
                                       'Twistiing Hip-Raise',
-                                       style: GoogleFonts.alegreyaSc(fontSize: 30),
+                                       style: GoogleFonts.alegreyaSc(fontSize: 27),
              
                                     ),]
                                   )
             ),
           ),
+           Divider(),
           // -------------------------------------------------4
           GestureDetector(
             onTap: () {
@@ -425,6 +168,7 @@ Step 2: Pull your navel inward and flex your glutes as you lift your hips just a
               );
             },
             child: Container(
+              padding: EdgeInsets.all(5),
               width: double.infinity,
                                   height: 70,
                                   decoration: BoxDecoration(
@@ -435,10 +179,13 @@ Step 2: Pull your navel inward and flex your glutes as you lift your hips just a
                                   ),
                                   child: Row(
                                     mainAxisAlignment: MainAxisAlignment.start,
-                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/131-1319291_six-pack-abs-gym-muscles-clipart-sticker-cartoon.png') ,radius:35,),
+                                    children:[  CircleAvatar( backgroundImage: AssetImage('assets/images/131-1319291_six-pack-abs-gym-muscles-clipart-sticker-cartoon.png') ,radius:33,),
+                                     SizedBox(
+                                      width: 5,
+                                    ),
                                       Text(
                                       'wistiing Hip-Raise 2',
-                                       style: GoogleFonts.alegreyaSc(fontSize: 30),
+                                       style: GoogleFonts.alegreyaSc(fontSize: 27),
              
                                     ),]
                                   )
@@ -465,7 +212,12 @@ class ModelsPage extends StatelessWidget {
 }
 
 class Models extends StatelessWidget {
+
   final Mymodel mymodel;
+  final _typenameController=TextEditingController();
+  final _weightController=TextEditingController();
+  final _repsController=TextEditingController();
+  final _setsController=TextEditingController();
 
   Models({required this.mymodel});
 
@@ -480,6 +232,7 @@ class Models extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
+          
           SizedBox(height: 40,),
           Center(
             child: SizedBox(
@@ -499,9 +252,12 @@ class Models extends StatelessWidget {
             ),
           ),
           SizedBox(height: 20,),
-           Text(
-             ' ${mymodel.Text1}',
-             style: GoogleFonts.acme(fontSize: 20,fontStyle: FontStyle.italic),
+           Padding(
+             padding: const EdgeInsets.all(8.0),
+             child: Text(
+               ' ${mymodel.Text1}',
+               style: GoogleFonts.acme(fontSize: 20,fontStyle: FontStyle.italic),
+             ),
            ),
            Row(
 
@@ -520,7 +276,9 @@ class Models extends StatelessWidget {
                      child: Column(
                       children: [
                        TextFormField(
+                        controller: _typenameController,
                          decoration: InputDecoration(
+                          
                           hintText: 'TYPE NAME',
                                  filled: true,
                                  fillColor: const Color.fromARGB(255, 255, 255, 255),
@@ -535,7 +293,9 @@ class Models extends StatelessWidget {
                         height: 16,
                        ),
                        TextFormField(
+                        controller: _weightController,
                          decoration: InputDecoration(
+                          
                           hintText: 'KG',
                                  filled: true,
                                  fillColor: const Color.fromARGB(255, 255, 255, 255),
@@ -550,6 +310,7 @@ class Models extends StatelessWidget {
                         height: 16,
                        ),
                        TextFormField(
+                        controller: _repsController,
                          decoration: InputDecoration(
                           hintText: 'SETS',
                                  filled: true,
@@ -565,6 +326,7 @@ class Models extends StatelessWidget {
                         height: 16,
                        ),
                        TextFormField(
+                        controller: _setsController,
                          decoration: InputDecoration(
                           hintText: 'REPS',
                                  filled: true,
@@ -580,7 +342,7 @@ class Models extends StatelessWidget {
                         height: 16,
                        ),
                        Container(
-                        height: 50,
+                        height: 40,
                         width: 300,
                         // color: Colors.white,
                         decoration: BoxDecoration(
@@ -593,6 +355,9 @@ class Models extends StatelessWidget {
                           children: [
                             IconButton(onPressed: (){}, icon: Icon(Icons.calendar_month)),
      DropdownButton<String>(
+      alignment: Alignment.bottomCenter,
+      padding: EdgeInsetsDirectional.all(3),
+      borderRadius: BorderRadius.circular(15),
                       value: 'Day',
                       items: <String>['Day', 'Week', 'Month',]
                           .map<DropdownMenuItem<String>>((String value) {
@@ -600,7 +365,7 @@ class Models extends StatelessWidget {
                           value: value,
                           child: Text(
                             value,
-                            style: TextStyle(fontSize: 30),
+                            style: TextStyle(fontSize: 15),
                           ),
                         );
                       }).toList(),
@@ -620,8 +385,9 @@ class Models extends StatelessWidget {
                     MaterialButton(onPressed: (
                       
                     ){
+                      onAddtaskButtonPressed();
                       
-                     Navigator.push(context, MaterialPageRoute(builder: (context) => ScreeenHome(),));
+                     Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => ScreeenHome(),));
                     },
                     color: Colors.white,
                     child: Text('ADD'),
@@ -638,8 +404,37 @@ class Models extends StatelessWidget {
         ],
       ),
     );
+    
   }
+  Future<void> onAddtaskButtonPressed()async{
+  final _typename = _typenameController.text.trim();
+  final _weight=_weightController.text.trim();
+  final _sets=_setsController.toString();
+  final _reps= _repsController.toString();
+  
+  if(_typename.isEmpty|| _weight.isEmpty){
+return;
+  }
+  final _task =Workoutmodel(typename: _typename, weight: _weight, reps: _reps, sets: _sets,);
+  print('$_typename $_weight');
+  addTask(_task);
+
 }
+}
+// Future<void> onAddtaskButtonPressed()async{
+//   final _typename = _type.text.trim();
+//   final _weight=_weightController.text.trim();
+//   final _sets=_setsController.trim();
+//   final _reps= _repsController.trim();
+  
+//   if(_typename.isEmpty|| _weight.i){
+// return;
+//   }
+//   final _task =Workoutmodel(typename: _typename, weight: _weight, reps: _reps, sets: _sets,);
+//   print('$_typename $_weight');
+//   addTask(_task);
+
+// }
 
 class Mymodel {
   final String images;

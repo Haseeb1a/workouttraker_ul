@@ -16,40 +16,47 @@ class ChartState extends State {
 
   @override
   Widget build(BuildContext context) {
-    return Card(
-      color: Color.fromARGB(255, 35, 71, 73),
-    // height: MediaQuery.of(context).size.height*0.2,
-    // width: MediaQuery.of(context).size.width*0.1,
-    child: AspectRatio(
-      aspectRatio: 1.3,
+    
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Color.fromARGB(225, 27, 57, 61),
+        title: Center(child: Text('Chart')),
+      ),
+      body: Card(
+        color: Color.fromARGB(255, 35, 71, 73),
+      // height: MediaQuery.of(context).size.height*0.2,
+      // width: MediaQuery.of(context).size.width*0.1,
       child: AspectRatio(
-        aspectRatio: 1,
-        child: PieChart(
-          PieChartData(
-            pieTouchData: PieTouchData(
-              touchCallback: (FlTouchEvent event, pieTouchResponse) {
-                setState(() {
-                  if (!event.isInterestedForInteractions ||
-                      pieTouchResponse == null ||
-                      pieTouchResponse.touchedSection == null) {
-                    touchedIndex = -1;
-                    return;
-                  }
-                  touchedIndex =
-                      pieTouchResponse.touchedSection!.touchedSectionIndex;
-                });
-              },
+        aspectRatio: 1.3,
+        child: AspectRatio(
+          aspectRatio: 1,
+          child: PieChart(
+            PieChartData(
+              pieTouchData: PieTouchData(
+                touchCallback: (FlTouchEvent event, pieTouchResponse) {
+                  setState(() {
+                    if (!event.isInterestedForInteractions ||
+                        pieTouchResponse == null ||
+                        pieTouchResponse.touchedSection == null) {
+                      touchedIndex = -1;
+                      return;
+                    }
+                    touchedIndex =
+                        pieTouchResponse.touchedSection!.touchedSectionIndex;
+                  });
+                },
+              ),
+              borderData: FlBorderData(
+                show: false,
+              ),
+              sectionsSpace: 0,
+              centerSpaceRadius: 0,
+              sections: showingSections(),
             ),
-            borderData: FlBorderData(
-              show: false,
-            ),
-            sectionsSpace: 0,
-            centerSpaceRadius: 0,
-            sections: showingSections(),
           ),
         ),
       ),
-    ),
+      ),
     );
   }
 
