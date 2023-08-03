@@ -24,7 +24,7 @@ class _ScreeenHomeState extends State<ScreeenHome> {
  ];
   @override
   Widget build(BuildContext context) {
-    getAlltask();
+    getAllTasks();
     return Scaffold(
       
       // backgroundColor: Color.fromARGB(225, 27, 57, 61),

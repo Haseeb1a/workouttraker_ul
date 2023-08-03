@@ -228,189 +228,206 @@ class Models extends StatelessWidget {
       appBar: AppBar(
          backgroundColor: Color.fromARGB(225, 27, 57, 61),
       ),
-      body: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        mainAxisAlignment: MainAxisAlignment.start,
-        children: [
-          
-          SizedBox(height: 40,),
-          Center(
-            child: SizedBox(
-              width: 300, // Adjust the width as needed
-              height:150, // Adjust the height as needed
-              child: Image.asset(
-                mymodel.images,
-                fit: BoxFit.fill,
+      body: SingleChildScrollView(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            
+            SizedBox(height: 40,),
+            Center(
+              child: SizedBox(
+                width: 300, // Adjust the width as needed
+                height:150, // Adjust the height as needed
+                child: Image.asset(
+                  mymodel.images,
+                  fit: BoxFit.fill,
+                ),
               ),
             ),
-          ),
-          Center(
-            child: Text(
-              'Muscle: ${mymodel.Text}',
-              style: GoogleFonts.alegreyaSc(fontSize: 30,fontStyle: FontStyle.italic),
-              // style: TextStyle(fontSize: 20,fontStyle: FontStyle.italic),
+            Center(
+              child: Text(
+                'Muscle: ${mymodel.Text}',
+                style: GoogleFonts.alegreyaSc(fontSize: 30,fontStyle: FontStyle.italic),
+                // style: TextStyle(fontSize: 20,fontStyle: FontStyle.italic),
+              ),
             ),
-          ),
-          SizedBox(height: 20,),
-           Padding(
-             padding: const EdgeInsets.all(8.0),
-             child: Text(
-               ' ${mymodel.Text1}',
-               style: GoogleFonts.acme(fontSize: 20,fontStyle: FontStyle.italic),
+            SizedBox(height: 20,),
+             Padding(
+               padding: const EdgeInsets.all(8.0),
+               child: Text(
+                 ' ${mymodel.Text1}',
+                 style: GoogleFonts.acme(fontSize: 20,fontStyle: FontStyle.italic),
+               ),
              ),
-           ),
-           Row(
-
-            mainAxisAlignment: MainAxisAlignment.end,
-            children: [FloatingActionButton(onPressed: (){
-              showDialog(
-
-                context: context,
-                builder: (ctx) =>AlertDialog(
-                  elevation: 10,
-                  backgroundColor: Color.fromARGB(255, 0, 0, 0),
-                  title: Text('kddjh'),
-                  content:
-                   Container(
-                    height: 350,
-                     child: Column(
-                      children: [
-                       TextFormField(
-                        controller: _typenameController,
-                         decoration: InputDecoration(
-                          
-                          hintText: 'TYPE NAME',
-                                 filled: true,
-                                 fillColor: const Color.fromARGB(255, 255, 255, 255),
-                                 border: OutlineInputBorder(
-                                   
-                                   borderSide: BorderSide.none,
-                                   borderRadius: BorderRadius.circular(15)
-                                 ),
-                               ),
-                       ),
-                       SizedBox(
-                        height: 16,
-                       ),
-                       TextFormField(
-                        controller: _weightController,
-                         decoration: InputDecoration(
-                          
-                          hintText: 'KG',
-                                 filled: true,
-                                 fillColor: const Color.fromARGB(255, 255, 255, 255),
-                                 border: OutlineInputBorder(
-                                   
-                                   borderSide: BorderSide.none,
-                                   borderRadius: BorderRadius.circular(15)
-                                 ),
-                               ),
-                       ),
-                       SizedBox(
-                        height: 16,
-                       ),
-                       TextFormField(
-                        controller: _repsController,
-                         decoration: InputDecoration(
-                          hintText: 'SETS',
-                                 filled: true,
-                                 fillColor: const Color.fromARGB(255, 255, 255, 255),
-                                 border: OutlineInputBorder(
-                                   
-                                   borderSide: BorderSide.none,
-                                   borderRadius: BorderRadius.circular(15)
-                                 ),
-                               ),
-                       ),
-                       SizedBox(
-                        height: 16,
-                       ),
-                       TextFormField(
-                        controller: _setsController,
-                         decoration: InputDecoration(
-                          hintText: 'REPS',
-                                 filled: true,
-                                 fillColor: const Color.fromARGB(255, 255, 255, 255),
-                                 border: OutlineInputBorder(
-                                   
-                                   borderSide: BorderSide.none,
-                                   borderRadius: BorderRadius.circular(15)
-                                 ),
-                               ),
-                       ),
-                       SizedBox(
-                        height: 16,
-                       ),
+             Row(
+      
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [FloatingActionButton(onPressed: (){
+                showDialog(
+                  
+      
+                  context: context,
+                  builder: (ctx) =>SingleChildScrollView(
+                    child: AlertDialog(
+                      elevation: 10,
+                      backgroundColor: Color.fromARGB(255, 0, 0, 0),
+                      title: Text('kddjh'),
+                      content:
                        Container(
-                        height: 40,
-                        width: 300,
-                        // color: Colors.white,
-                        decoration: BoxDecoration(
-
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(15)
-                        ),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        height: 350,
+                         child: Column(
                           children: [
-                            IconButton(onPressed: (){}, icon: Icon(Icons.calendar_month)),
-     DropdownButton<String>(
-      alignment: Alignment.bottomCenter,
-      padding: EdgeInsetsDirectional.all(3),
-      borderRadius: BorderRadius.circular(15),
-                      value: 'Day',
-                      items: <String>['Day', 'Week', 'Month',]
-                          .map<DropdownMenuItem<String>>((String value) {
-                        return DropdownMenuItem<String>(
-                          value: value,
-                          child: Text(
-                            value,
-                            style: TextStyle(fontSize: 15),
-                          ),
-                        );
-                      }).toList(),
-                      onChanged: (String? newValue) {
-                        // You can handle the onChanged event here if needed.
-                      },
-                    ),
-
-                          ],
-                        ),
-                       )
-                      ],
+                           TextFormField(
+                            controller: _typenameController,
+                            keyboardType: TextInputType.name,
+                             decoration: InputDecoration(
+                              
+                              
+                              hintText: 'TYPE NAME',
+                                     filled: true,
+                                     fillColor: const Color.fromARGB(255, 255, 255, 255),
+                                     border: OutlineInputBorder(
+                                       
+                                       borderSide: BorderSide.none,
+                                       borderRadius: BorderRadius.circular(15)
                                      ),
-                   ),
-
-                  actions: [
-                    MaterialButton(onPressed: (
-                      
-                    ){
-                      onAddtaskButtonPressed();
-                      
-                     Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => ScreeenHome(),));
-                    },
-                    color: Colors.white,
-                    child: Text('ADD'),
-                    )
-                  ],
-                )
-       
-    );
-            },child: Icon(Icons.add),backgroundColor: Colors.black,),
-             SizedBox(width: 15,),]
-            ),
-           
-          SizedBox(height: 20),
-        ],
+                                   ),
+                           ),
+                           SizedBox(
+                            height: 16,
+                           ),
+                           TextFormField(
+                            controller: _weightController,
+                             keyboardType: TextInputType.number,
+                             decoration: InputDecoration(
+                              
+                              hintText: 'KG',
+                                     filled: true,
+                                     fillColor: const Color.fromARGB(255, 255, 255, 255),
+                                     border: OutlineInputBorder(
+                                       
+                                       borderSide: BorderSide.none,
+                                       borderRadius: BorderRadius.circular(15)
+                                     ),
+                                   ),
+                           ),
+                           SizedBox(
+                            height: 16,
+                           ),
+                           TextFormField(
+                            controller: _repsController,
+                            keyboardType: TextInputType.number,
+                             decoration: InputDecoration(
+                              hintText: 'SETS',
+                                     filled: true,
+                                     fillColor: const Color.fromARGB(255, 255, 255, 255),
+                                     border: OutlineInputBorder(
+                                       
+                                       borderSide: BorderSide.none,
+                                       borderRadius: BorderRadius.circular(15)
+                                     ),
+                                   ),
+                           ),
+                           SizedBox(
+                            height: 16,
+                           ),
+                           TextFormField(
+                            controller: _setsController,
+                             keyboardType: TextInputType.number,
+                             decoration: InputDecoration(
+                              hintText: 'REPS',
+                                     filled: true,
+                                     fillColor: const Color.fromARGB(255, 255, 255, 255),
+                                     border: OutlineInputBorder(
+                                       
+                                       borderSide: BorderSide.none,
+                                       borderRadius: BorderRadius.circular(15)
+                                     ),
+                                   ),
+                           ),
+                           SizedBox(
+                            height: 16,
+                           ),
+                           Container(
+                            height: 40,
+                            width: 300,
+                            // color: Colors.white,
+                            decoration: BoxDecoration(
+                        
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(15)
+                            ),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                              IconButton(
+                          onPressed: () => _selectDate(context),
+                          icon: Icon(Icons.calendar_today),
+                          tooltip: 'Selet Date',
+                            ),
+                             DropdownButton<String>(
+                          alignment: Alignment.bottomCenter,
+                          padding: EdgeInsetsDirectional.all(3),
+                          borderRadius: BorderRadius.circular(15),
+                          value: 'Day',
+                          items: <String>['Day', 'Week', 'Month',]
+                              .map<DropdownMenuItem<String>>((String value) {
+                            return DropdownMenuItem<String>(
+                              value: value,
+                              child: Text(
+                                value,
+                                style: TextStyle(fontSize: 15),
+                              ),
+                            );
+                          }).toList(),
+                          onChanged: (String? newValue) {
+                            // You can handle the onChanged event here if needed.
+                          },
+                        ),
+                        
+                              ],
+                            ),
+                           )
+                          ],
+                                         ),
+                       ),
+                        
+                      actions: [
+                        MaterialButton(onPressed: (
+                          
+                        ){
+                          onAddtaskButtonPressed();
+                          
+                         Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => ScreeenHome(),));
+                        },
+                        color: Colors.white,
+                        child: Text('ADD'),
+                        )
+                      ],
+                    ),
+                  )
+         
+          );
+              },child: Icon(Icons.add),backgroundColor: Colors.black,),
+               SizedBox(width: 15,),]
+              ),
+             
+            SizedBox(height: 20),
+          ],
+        ),
       ),
+
     );
     
+    
   }
+  
   Future<void> onAddtaskButtonPressed()async{
   final _typename = _typenameController.text.trim();
   final _weight=_weightController.text.trim();
-  final _sets=_setsController.toString();
-  final _reps= _repsController.toString();
+  final _sets=_setsController.text.trim();
+  final _reps= _repsController.text.trim();
   
   if(_typename.isEmpty|| _weight.isEmpty){
 return;
@@ -420,7 +437,22 @@ return;
   addTask(_task);
 
 }
+ Future<void> _selectDate(BuildContext context) async {
+    DateTime initialDate = DateTime.now(); // You can set any initial date you want
+    DateTime? selectedDate = await showDatePicker(
+      context: context,
+      initialDate: initialDate,
+      firstDate: DateTime(2000),
+      lastDate: DateTime(2100),
+    );
+
+    if (selectedDate != null && selectedDate != initialDate) {
+      // Do something with the selected date
+      print("Selected date: $selectedDate");
+    }
+  }
 }
+
 // Future<void> onAddtaskButtonPressed()async{
 //   final _typename = _type.text.trim();
 //   final _weight=_weightController.text.trim();

@@ -21,6 +21,7 @@ Future<void> main() async {
   if (!Hive.isAdapterRegistered(WorkoutmodelAdapter().typeId)) {
     Hive.registerAdapter(WorkoutmodelAdapter());
   }
+   await Hive.openBox<Workoutmodel>('workout_db');
 
   runApp(const MyApp());
 }

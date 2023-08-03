@@ -4,23 +4,23 @@ import 'package:hive/hive.dart';
 
 @HiveType(typeId: 1)
 class Workoutmodel {
-  @HiveField(4)
+  @HiveField(0)
   int? id;
 
-  @HiveField(0)
+  @HiveField(1)
   String typename;
 
-  @HiveField(1)
+  @HiveField(2)
   String weight ;
 
-  @HiveField(2)
+  @HiveField(3)
   String reps ;
    
-  @HiveField(3)
+  @HiveField(4)
   String sets ; 
 
   // @HiveField(4)
   // int dateandtime ; 
 
-  Workoutmodel({required this.typename,required this.weight,required this.reps,required this.sets,this.id});
+  Workoutmodel({required this.typename,required this.weight,required this.reps,required this.sets,  this.id});
 }

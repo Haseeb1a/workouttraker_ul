@@ -17,11 +17,12 @@ class WorkoutmodelAdapter extends TypeAdapter<Workoutmodel> {
       for (int i = 0; i < numOfFields; i++) reader.readByte(): reader.read(),
     };
     return Workoutmodel(
-      typename: fields[0] as String,
-      weight: fields[1] as String,
-      reps: fields[2] as String,
-      sets: fields[3] as String,
-      // dateandtime: fields[4] as int,
+      id: fields[0] as int?,
+      typename: fields[1] as String,
+      weight: fields[2] as String,
+      reps: fields[3] as String,
+      sets: fields[4] as String,
+      
     );
   }
 
@@ -29,16 +30,16 @@ class WorkoutmodelAdapter extends TypeAdapter<Workoutmodel> {
   void write(BinaryWriter writer, Workoutmodel obj) {
     writer
       ..writeByte(5)
-      ..writeByte(0)
-      ..write(obj.typename)
       ..writeByte(1)
-      ..write(obj.weight)
+      ..write(obj.typename)
       ..writeByte(2)
-      ..write(obj.reps)
+      ..write(obj.weight)
       ..writeByte(3)
-      ..write(obj.sets);
-      // ..writeByte(4)
-      // ..write(obj.dateandtime);
+      ..write(obj.reps)
+      ..writeByte(4)
+      ..write(obj.sets)
+      ..writeByte(0)
+      ..write(obj.id);
   }
 
   @override
