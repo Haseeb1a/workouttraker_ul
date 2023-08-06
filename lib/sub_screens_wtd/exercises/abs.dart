@@ -3,11 +3,14 @@
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:workouttraker/SUBS/other_SUB/edit.dart';
+import 'package:intl/intl.dart';
+import 'package:workouttraker/sub_screens_wtd/other_sub/edit.dart';
 import 'package:workouttraker/dbfunction/functions/db_functions.dart';
 import 'package:workouttraker/dbfunction/model/workoutmodel1.dart';
 import 'package:workouttraker/main_wgts/bottom_main.dart';
 import 'package:workouttraker/main_wgts/task_wtd.dart';
+import 'package:intl/intl_browser.dart';
+
 
 class Abs extends StatelessWidget {
   const Abs({Key? key}) : super(key: key);
@@ -211,15 +214,39 @@ class ModelsPage extends StatelessWidget {
   }
 }
 
-class Models extends StatelessWidget {
+class Models extends StatefulWidget {
 
   final Mymodel mymodel;
-  final _typenameController=TextEditingController();
-  final _weightController=TextEditingController();
-  final _repsController=TextEditingController();
-  final _setsController=TextEditingController();
 
   Models({required this.mymodel});
+
+  @override
+  State<Models> createState() => _ModelsState();
+}
+
+class _ModelsState extends State<Models> {
+  
+  final _typenameController=TextEditingController();
+
+  final _weightController=TextEditingController();
+
+  final _repsController=TextEditingController();
+
+  final _setsController=TextEditingController();
+
+  TextEditingController _dateController=TextEditingController();
+  
+   final TextEditingController _dropdownController = TextEditingController();
+  String _selectedValue = 'Day';
+
+  @override
+  void initState() {
+    super.initState();
+    _dropdownController.text = _selectedValue;
+  }
+  
+
+
 
   @override
   Widget build(BuildContext context) {
@@ -240,14 +267,14 @@ class Models extends StatelessWidget {
                 width: 300, // Adjust the width as needed
                 height:150, // Adjust the height as needed
                 child: Image.asset(
-                  mymodel.images,
+                  widget.mymodel.images,
                   fit: BoxFit.fill,
                 ),
               ),
             ),
             Center(
               child: Text(
-                'Muscle: ${mymodel.Text}',
+                'Muscle: ${widget.mymodel.Text}',
                 style: GoogleFonts.alegreyaSc(fontSize: 30,fontStyle: FontStyle.italic),
                 // style: TextStyle(fontSize: 20,fontStyle: FontStyle.italic),
               ),
@@ -256,7 +283,7 @@ class Models extends StatelessWidget {
              Padding(
                padding: const EdgeInsets.all(8.0),
                child: Text(
-                 ' ${mymodel.Text1}',
+                 ' ${widget.mymodel.Text1}',
                  style: GoogleFonts.acme(fontSize: 20,fontStyle: FontStyle.italic),
                ),
              ),
@@ -275,7 +302,7 @@ class Models extends StatelessWidget {
                       title: Text('kddjh'),
                       content:
                        Container(
-                        height: 350,
+                        height: 380,
                          child: Column(
                           children: [
                            TextFormField(
@@ -346,6 +373,26 @@ class Models extends StatelessWidget {
                                      ),
                                    ),
                            ),
+                            TextFormField(
+                            controller: _dateController,
+                             keyboardType: TextInputType.number,
+                             decoration: InputDecoration(
+                              labelText: 'Date',
+                                     filled: true,
+                                     prefixIcon: Icon(Icons.calendar_today),
+                                     fillColor: const Color.fromARGB(255, 255, 255, 255),
+                                     
+                                     border: OutlineInputBorder(
+                                       
+                                       borderSide: BorderSide.none,
+                                       borderRadius: BorderRadius.circular(15)
+                                     ),
+                                   ),
+                                   readOnly: true,
+                                   onTap: (){
+                                    _selectDate();
+                                   },
+                           ),
                            SizedBox(
                             height: 16,
                            ),
@@ -354,6 +401,7 @@ class Models extends StatelessWidget {
                             width: 300,
                             // color: Colors.white,
                             decoration: BoxDecoration(
+                              
                         
                               color: Colors.white,
                               borderRadius: BorderRadius.circular(15)
@@ -361,30 +409,29 @@ class Models extends StatelessWidget {
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
-                              IconButton(
-                          onPressed: () => _selectDate(context),
-                          icon: Icon(Icons.calendar_today),
-                          tooltip: 'Selet Date',
-                            ),
-                             DropdownButton<String>(
-                          alignment: Alignment.bottomCenter,
-                          padding: EdgeInsetsDirectional.all(3),
-                          borderRadius: BorderRadius.circular(15),
-                          value: 'Day',
-                          items: <String>['Day', 'Week', 'Month',]
-                              .map<DropdownMenuItem<String>>((String value) {
-                            return DropdownMenuItem<String>(
-                              value: value,
-                              child: Text(
-                                value,
-                                style: TextStyle(fontSize: 15),
-                              ),
-                            );
-                          }).toList(),
-                          onChanged: (String? newValue) {
-                            // You can handle the onChanged event here if needed.
-                          },
-                        ),
+                            
+       DropdownButton<String>(
+  alignment: Alignment.bottomCenter,
+  padding: EdgeInsetsDirectional.all(3),
+  borderRadius: BorderRadius.circular(15),
+  value: _dropdownController.text, // Set the current selected value from the controller.
+  items: <String>['Day', 'Week', 'Month']
+      .map<DropdownMenuItem<String>>((String value) {
+        return DropdownMenuItem<String>(
+          value: value,
+          child: Text(
+            value,
+            style: TextStyle(fontSize: 15),
+          ),
+        );
+      }).toList(),
+  onChanged: (String? newValue) {
+    setState(() {
+      _selectedValue = newValue!; // Update the state variable with the selected value.
+      _dropdownController.text = _selectedValue; // Update the controller's text.
+    });
+  },
+),
                         
                               ],
                             ),
@@ -422,35 +469,39 @@ class Models extends StatelessWidget {
     
     
   }
-  
+
   Future<void> onAddtaskButtonPressed()async{
   final _typename = _typenameController.text.trim();
   final _weight=_weightController.text.trim();
   final _sets=_setsController.text.trim();
   final _reps= _repsController.text.trim();
+  final _date = DateTime.parse(_dateController.text.trim()); 
+  final _duration=_dropdownController .text.trim();
+  
   
   if(_typename.isEmpty|| _weight.isEmpty){
 return;
   }
-  final _task =Workoutmodel(typename: _typename, weight: _weight, reps: _reps, sets: _sets,);
+  final _task =Workoutmodel(typename: _typename, weight: _weight, reps: _reps, sets: _sets,date: _date ,
+  duration: _duration);
   print('$_typename $_weight');
   addTask(_task);
 
 }
- Future<void> _selectDate(BuildContext context) async {
-    DateTime initialDate = DateTime.now(); // You can set any initial date you want
-    DateTime? selectedDate = await showDatePicker(
-      context: context,
-      initialDate: initialDate,
-      firstDate: DateTime(2000),
-      lastDate: DateTime(2100),
-    );
 
-    if (selectedDate != null && selectedDate != initialDate) {
-      // Do something with the selected date
-      print("Selected date: $selectedDate");
-    }
+Future<void> _selectDate() async {
+  DateTime? picked = await showDatePicker(
+    context: context,
+    initialDate: DateTime.now(),
+    firstDate: DateTime(2000),
+    lastDate: DateTime(2100),
+  );
+  if (picked != null) {
+    setState(() {
+      _dateController.text = DateFormat('yyyy-MM-dd').format(picked);
+    });
   }
+}
 }
 
 // Future<void> onAddtaskButtonPressed()async{
@@ -475,5 +526,7 @@ class Mymodel {
 
   Mymodel(this.images, this.Text,this.Text1);
 }
+// ---------------------------------------------------------------
+
 
 

@@ -19,8 +19,24 @@ class Workoutmodel {
   @HiveField(4)
   String sets ; 
 
+  @HiveField(5)
+  DateTime date;
+
+  @HiveField(6)
+  String duration;
+
+
+
   // @HiveField(4)
   // int dateandtime ; 
 
-  Workoutmodel({required this.typename,required this.weight,required this.reps,required this.sets,  this.id});
+  Workoutmodel({
+  required this.typename,
+  required this.weight,
+  required this.reps,
+  required this.sets,
+  this.id,
+  required this.date,
+  required this.duration
+});
 }

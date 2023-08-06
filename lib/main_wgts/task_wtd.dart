@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
 import 'package:workouttraker/dbfunction/functions/db_functions.dart';
 import 'package:workouttraker/dbfunction/model/workoutmodel1.dart';
+import 'package:intl/intl.dart';
 
 class Task extends StatefulWidget {
   const Task({super.key});
@@ -199,10 +200,11 @@ class _TaskState extends State<Task> {
                                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                 children: [
                                   Text(
-                                    'AUG 10',
+                                    DateFormat('yyyy-MM-dd').format(data.date!),
+
                                     style: TextStyle(fontSize: 20),
                                   ),
-                                  Text('week'),
+                                  Text(data.duration),
                                 ],
                               ),
                             ),

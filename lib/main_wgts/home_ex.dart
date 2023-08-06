@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:workouttraker/SUBS/ex_SUB/ABS/abs.dart';
-import 'package:workouttraker/SUBS/ex_SUB/ALL/all.dart';
-import 'package:workouttraker/SUBS/ex_SUB/BACK/back.dart';
-import 'package:workouttraker/SUBS/ex_SUB/BICEPS/biceps.dart';
-import 'package:workouttraker/SUBS/ex_SUB/CALF/calf.dart';
-import 'package:workouttraker/SUBS/ex_SUB/CHEST/chest.dart';
-import 'package:workouttraker/SUBS/ex_SUB/FOREARMS/forearms.dart';
-import 'package:workouttraker/SUBS/ex_SUB/LEGS/legs.dart';
-import 'package:workouttraker/SUBS/ex_SUB/SHOULDERS/shoulders.dart';
-import 'package:workouttraker/SUBS/ex_SUB/TRICEPS/triceps.dart';
+import 'package:workouttraker/sub_screens_wtd/exercises/abs.dart';
+import 'package:workouttraker/sub_screens_wtd/exercises/all.dart';
+import 'package:workouttraker/sub_screens_wtd/exercises/back.dart';
+import 'package:workouttraker/sub_screens_wtd/exercises/biceps.dart';
+import 'package:workouttraker/sub_screens_wtd/exercises/calf.dart';
+import 'package:workouttraker/sub_screens_wtd/exercises/chest.dart';
+import 'package:workouttraker/sub_screens_wtd/exercises/forearms.dart';
+import 'package:workouttraker/sub_screens_wtd/exercises/legs.dart';
+import 'package:workouttraker/sub_screens_wtd/exercises/shoulders.dart';
+import 'package:workouttraker/sub_screens_wtd/exercises/triceps.dart';
 import 'package:workouttraker/main.dart';
 
 class HomeEx extends StatefulWidget {

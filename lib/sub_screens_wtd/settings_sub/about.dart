@@ -10,6 +10,8 @@ class About extends StatefulWidget {
 class _AboutState extends State<About> {
   @override
   Widget build(BuildContext context) {
+     double screenWidth = MediaQuery.of(context).size.width;
+    double screenHeight = MediaQuery.of(context).size.height;
     return Scaffold(
      appBar: AppBar(
       backgroundColor: Color.fromARGB(225, 27, 57, 61),
@@ -27,6 +29,7 @@ class _AboutState extends State<About> {
                 
            
              Container(
+
               color: Colors.black,
               padding: EdgeInsets.all(10),
                child: Text('''Welcome to Workout Traker, your easy-to-use fitness companion designed to make your fitness journey seamless and enjoyable. FitEase is perfect for anyone looking to stay active, healthy, and motivated. Whether you're a beginner or a fitness enthusiast, our app provides the tools and features you need to achieve your wellness goals with ease.
