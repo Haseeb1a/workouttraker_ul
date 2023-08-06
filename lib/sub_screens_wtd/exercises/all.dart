@@ -6,6 +6,7 @@ import 'package:workouttraker/dbfunction/functions/db_functions.dart';
 import 'package:workouttraker/dbfunction/model/workoutmodel1.dart';
 import 'package:workouttraker/main_wgts/bottom_main.dart';
 import 'package:intl/intl.dart';
+import 'package:workouttraker/sub_screens_wtd/other_sub/create.dart';
 
 class All extends StatelessWidget {
   const All({Key? key}) : super(key: key);
@@ -346,172 +347,173 @@ class _ModelsState extends State<Models> {
       
               mainAxisAlignment: MainAxisAlignment.end,
               children: [FloatingActionButton(onPressed: (){
-                showDialog(
+                   Navigator.push(context, MaterialPageRoute(builder:(context) => Textng(),));
+          //       showDialog(
                   
       
-                  context: context,
-                  builder: (ctx) =>SingleChildScrollView(
-                    child: AlertDialog(
-                      elevation: 10,
-                      backgroundColor: Color.fromARGB(255, 0, 0, 0),
-                      title: Text('kddjh'),
-                      content:
-                       Container(
-                        height: 380,
-                         child: Column(
-                          children: [
-                           TextFormField(
-                            controller: _typenameController,
-                            keyboardType: TextInputType.name,
-                             decoration: InputDecoration(
+          //         context: context,
+          //         builder: (ctx) =>SingleChildScrollView(
+          //           child: AlertDialog(
+          //             elevation: 10,
+          //             backgroundColor: Color.fromARGB(255, 0, 0, 0),
+          //             title: Text('kddjh'),
+          //             content:
+          //              Container(
+          //               height: 380,
+          //                child: Column(
+          //                 children: [
+          //                  TextFormField(
+          //                   controller: _typenameController,
+          //                   keyboardType: TextInputType.name,
+          //                    decoration: InputDecoration(
                               
                               
-                              hintText: 'TYPE NAME',
-                                     filled: true,
-                                     fillColor: const Color.fromARGB(255, 255, 255, 255),
-                                     border: OutlineInputBorder(
+          //                     hintText: 'TYPE NAME',
+          //                            filled: true,
+          //                            fillColor: const Color.fromARGB(255, 255, 255, 255),
+          //                            border: OutlineInputBorder(
                                        
-                                       borderSide: BorderSide.none,
-                                       borderRadius: BorderRadius.circular(15)
-                                     ),
-                                   ),
-                           ),
-                           SizedBox(
-                            height: 16,
-                           ),
-                           TextFormField(
-                            controller: _weightController,
-                             keyboardType: TextInputType.number,
-                             decoration: InputDecoration(
+          //                              borderSide: BorderSide.none,
+          //                              borderRadius: BorderRadius.circular(15)
+          //                            ),
+          //                          ),
+          //                  ),
+          //                  SizedBox(
+          //                   height: 16,
+          //                  ),
+          //                  TextFormField(
+          //                   controller: _weightController,
+          //                    keyboardType: TextInputType.number,
+          //                    decoration: InputDecoration(
                               
-                              hintText: 'KG',
-                                     filled: true,
-                                     fillColor: const Color.fromARGB(255, 255, 255, 255),
-                                     border: OutlineInputBorder(
+          //                     hintText: 'KG',
+          //                            filled: true,
+          //                            fillColor: const Color.fromARGB(255, 255, 255, 255),
+          //                            border: OutlineInputBorder(
                                        
-                                       borderSide: BorderSide.none,
-                                       borderRadius: BorderRadius.circular(15)
-                                     ),
-                                   ),
-                           ),
-                           SizedBox(
-                            height: 16,
-                           ),
-                           TextFormField(
-                            controller: _repsController,
-                            keyboardType: TextInputType.number,
-                             decoration: InputDecoration(
-                              hintText: 'SETS',
-                                     filled: true,
-                                     fillColor: const Color.fromARGB(255, 255, 255, 255),
-                                     border: OutlineInputBorder(
+          //                              borderSide: BorderSide.none,
+          //                              borderRadius: BorderRadius.circular(15)
+          //                            ),
+          //                          ),
+          //                  ),
+          //                  SizedBox(
+          //                   height: 16,
+          //                  ),
+          //                  TextFormField(
+          //                   controller: _repsController,
+          //                   keyboardType: TextInputType.number,
+          //                    decoration: InputDecoration(
+          //                     hintText: 'SETS',
+          //                            filled: true,
+          //                            fillColor: const Color.fromARGB(255, 255, 255, 255),
+          //                            border: OutlineInputBorder(
                                        
-                                       borderSide: BorderSide.none,
-                                       borderRadius: BorderRadius.circular(15)
-                                     ),
-                                   ),
-                           ),
-                           SizedBox(
-                            height: 16,
-                           ),
-                           TextFormField(
-                            controller: _setsController,
-                             keyboardType: TextInputType.number,
-                             decoration: InputDecoration(
-                              hintText: 'REPS',
-                                     filled: true,
-                                     fillColor: const Color.fromARGB(255, 255, 255, 255),
-                                     border: OutlineInputBorder(
+          //                              borderSide: BorderSide.none,
+          //                              borderRadius: BorderRadius.circular(15)
+          //                            ),
+          //                          ),
+          //                  ),
+          //                  SizedBox(
+          //                   height: 16,
+          //                  ),
+          //                  TextFormField(
+          //                   controller: _setsController,
+          //                    keyboardType: TextInputType.number,
+          //                    decoration: InputDecoration(
+          //                     hintText: 'REPS',
+          //                            filled: true,
+          //                            fillColor: const Color.fromARGB(255, 255, 255, 255),
+          //                            border: OutlineInputBorder(
                                        
-                                       borderSide: BorderSide.none,
-                                       borderRadius: BorderRadius.circular(15)
-                                     ),
-                                   ),
-                           ),
-                            TextFormField(
-                            controller: _dateController,
-                             keyboardType: TextInputType.number,
-                             decoration: InputDecoration(
-                              labelText: 'Date',
-                                     filled: true,
-                                     prefixIcon: Icon(Icons.calendar_today),
-                                     fillColor: const Color.fromARGB(255, 255, 255, 255),
+          //                              borderSide: BorderSide.none,
+          //                              borderRadius: BorderRadius.circular(15)
+          //                            ),
+          //                          ),
+          //                  ),
+          //                   TextFormField(
+          //                   controller: _dateController,
+          //                    keyboardType: TextInputType.number,
+          //                    decoration: InputDecoration(
+          //                     labelText: 'Date',
+          //                            filled: true,
+          //                            prefixIcon: Icon(Icons.calendar_today),
+          //                            fillColor: const Color.fromARGB(255, 255, 255, 255),
                                      
-                                     border: OutlineInputBorder(
+          //                            border: OutlineInputBorder(
                                        
-                                       borderSide: BorderSide.none,
-                                       borderRadius: BorderRadius.circular(15)
-                                     ),
-                                   ),
-                                   readOnly: true,
-                                   onTap: (){
-                                    _selectDate();
-                                   },
-                           ),
-                           SizedBox(
-                            height: 16,
-                           ),
-                        //    Container(
-                        //     height: 40,
-                        //     width: 300,
-                        //     // color: Colors.white,
-                        //     decoration: BoxDecoration(
+          //                              borderSide: BorderSide.none,
+          //                              borderRadius: BorderRadius.circular(15)
+          //                            ),
+          //                          ),
+          //                          readOnly: true,
+          //                          onTap: (){
+          //                           _selectDate();
+          //                          },
+          //                  ),
+          //                  SizedBox(
+          //                   height: 16,
+          //                  ),
+          //               //    Container(
+          //               //     height: 40,
+          //               //     width: 300,
+          //               //     // color: Colors.white,
+          //               //     decoration: BoxDecoration(
                               
                         
-                        //       color: Colors.white,
-                        //       borderRadius: BorderRadius.circular(15)
-                        //     ),
-                        //     child: Row(
-                        //       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        //       children: [
-                        //       IconButton(
-                        //   onPressed: () => _selectDate(context),
-                        //   icon: Icon(Icons.calendar_today),
-                        //   tooltip: 'Selet Date',
-                        //     ),
-                        //      DropdownButton<String>(
-                        //   alignment: Alignment.bottomCenter,
-                        //   padding: EdgeInsetsDirectional.all(3),
-                        //   borderRadius: BorderRadius.circular(15),
-                        //   value: 'Day',
-                        //   items: <String>['Day', 'Week', 'Month',]
-                        //       .map<DropdownMenuItem<String>>((String value) {
-                        //     return DropdownMenuItem<String>(
-                        //       value: value,
-                        //       child: Text(
-                        //         value,
-                        //         style: TextStyle(fontSize: 15),
-                        //       ),
-                        //     );
-                        //   }).toList(),
-                        //   onChanged: (String? newValue) {
-                        //     // You can handle the onChanged event here if needed.
-                        //   },
-                        // ),
+          //               //       color: Colors.white,
+          //               //       borderRadius: BorderRadius.circular(15)
+          //               //     ),
+          //               //     child: Row(
+          //               //       mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          //               //       children: [
+          //               //       IconButton(
+          //               //   onPressed: () => _selectDate(context),
+          //               //   icon: Icon(Icons.calendar_today),
+          //               //   tooltip: 'Selet Date',
+          //               //     ),
+          //               //      DropdownButton<String>(
+          //               //   alignment: Alignment.bottomCenter,
+          //               //   padding: EdgeInsetsDirectional.all(3),
+          //               //   borderRadius: BorderRadius.circular(15),
+          //               //   value: 'Day',
+          //               //   items: <String>['Day', 'Week', 'Month',]
+          //               //       .map<DropdownMenuItem<String>>((String value) {
+          //               //     return DropdownMenuItem<String>(
+          //               //       value: value,
+          //               //       child: Text(
+          //               //         value,
+          //               //         style: TextStyle(fontSize: 15),
+          //               //       ),
+          //               //     );
+          //               //   }).toList(),
+          //               //   onChanged: (String? newValue) {
+          //               //     // You can handle the onChanged event here if needed.
+          //               //   },
+          //               // ),
                         
-                        //       ],
-                        //     ),
-                        //    )
-                          ],
-                                         ),
-                       ),
+          //               //       ],
+          //               //     ),
+          //               //    )
+          //                 ],
+          //                                ),
+          //              ),
                         
-                      actions: [
-                        MaterialButton(onPressed: (
+          //             actions: [
+          //               MaterialButton(onPressed: (
                           
-                        ){
-                          onAddtaskButtonPressed();
+          //               ){
+          //                 onAddtaskButtonPressed();
                           
-                         Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => ScreeenHome(),));
-                        },
-                        color: Colors.white,
-                        child: Text('ADD'),
-                        )
-                      ],
-                    ),
-                  )
+          //                Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => ScreeenHome(),));
+          //               },
+          //               color: Colors.white,
+          //               child: Text('ADD'),
+          //               )
+          //             ],
+          //           ),
+          //         )
          
-          );
+          // );
               },child: Icon(Icons.add),backgroundColor: Colors.black,),
                SizedBox(width: 15,),]
               ),

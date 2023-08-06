@@ -38,7 +38,7 @@ Step 2: Once you have lifted the weight off of the rack, the bar will be directl
                                   height: 70,
                                   decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(10),
-                                    color: Color.fromARGB(255, 255, 255, 255),
+                                    color: Color.fromARGB(255, 0, 0, 0),
                                     border: Border.all(
                                         color: Color.fromARGB(255, 255, 255, 255)),
                                   ),
@@ -48,13 +48,13 @@ Step 2: Once you have lifted the weight off of the rack, the bar will be directl
                                     SizedBox(width: 5,),
                                       Text(
                                       'BenchPresses',
-                                      style: GoogleFonts.alegreyaSc(fontSize: 27),
+                                      style: GoogleFonts.alegreyaSc(fontSize: 27,color: Colors.white),
              
                                     ),]
                                   )
             ),
           ),
-          Divider(),
+          // Divider(),
           // -------------------------------------2
           GestureDetector(
             onTap: () {
@@ -80,7 +80,7 @@ Step 2:Hold your feet together or very slightly spread: Inhale and bend your elb
                                   height: 70,
                                   decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(10),
-                                    color: Color.fromARGB(255, 255, 255, 255),
+                                    color: Color.fromARGB(255, 0, 0, 0),
                                     border: Border.all(
                                         color: Color.fromARGB(255, 255, 255, 255)),
                                   ),
@@ -90,13 +90,19 @@ Step 2:Hold your feet together or very slightly spread: Inhale and bend your elb
                                        SizedBox(width: 5,),
                                       Text(
                                       'Push-ups',
-                                       style: GoogleFonts.alegreyaSc(fontSize: 27),
+                                       style: GoogleFonts.alegreyaSc(fontSize: 27,color: Colors.white),
+
              
-                                    ),]
+             
+                                    ),
+                                    Icon(Icons.chevron_right,color: Colors.white,)
+                                    ]
+                                    
                                   )
+                                  
             ),
           ),
-          Divider(),
+          // Divider(),
           // -------------------------------------------------3
           GestureDetector(
             onTap: () {
@@ -122,7 +128,7 @@ Step 2:Lower yourself until your chest is inches away from the floor by bending 
                                   height: 70,
                                   decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(10),
-                                    color: Color.fromARGB(255, 255, 255, 255),
+                                    color: Color.fromARGB(255, 0, 0, 0),
                                     border: Border.all(
                                         color: Color.fromARGB(255, 255, 255, 255)),
                                   ),
@@ -132,7 +138,7 @@ Step 2:Lower yourself until your chest is inches away from the floor by bending 
                                        SizedBox(width: 5,),
                                       Text(
                                       'Bodyweight Push up ',
-                                       style: GoogleFonts.alegreyaSc(fontSize: 27),
+                                      style: GoogleFonts.alegreyaSc(fontSize: 27,color: Colors.white),
              
                                     ),]
                                   )
