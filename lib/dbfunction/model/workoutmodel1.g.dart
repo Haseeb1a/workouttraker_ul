@@ -24,6 +24,10 @@ class WorkoutmodelAdapter extends TypeAdapter<Workoutmodel> {
       sets: fields[4] as String,
       date: fields[5] as DateTime,
       duration: fields[6] as String,
+      // personname: fields[7] as String,
+      // personheight: fields[8] as String,
+      // personweight: fields[9] as String,
+      // personage: fields[10] as String,
       
     );
   }
@@ -45,7 +49,15 @@ class WorkoutmodelAdapter extends TypeAdapter<Workoutmodel> {
       ..writeByte(5)
       ..write(obj.date)
       ..writeByte(6)
-      ..write(obj.date);
+      ..write(obj.duration);
+      // ..writeByte(7)
+      // ..write(obj.personname)
+      // ..writeByte(8)
+      // ..write(obj.personheight)
+      // ..writeByte(9)
+      // ..write(obj.personweight)
+      // ..writeByte(10)
+      // ..write(obj.personage);
 
   }
 

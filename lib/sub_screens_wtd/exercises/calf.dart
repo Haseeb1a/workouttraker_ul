@@ -2,7 +2,7 @@
 // ------------------------------------------------------------
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:workouttraker/main_wgts/bottom_main.dart';
+import 'package:workouttraker/sub_screens_wtd/other_SUB/create.dart';
 
 class Calf extends StatelessWidget {
   const Calf({Key? key}) : super(key: key);
@@ -200,129 +200,8 @@ class Models extends StatelessWidget {
 
             mainAxisAlignment: MainAxisAlignment.end,
             children: [FloatingActionButton(onPressed: (){
-              showDialog(
-
-                context: context,
-                builder: (ctx) =>AlertDialog(
-                  elevation: 10,
-                  backgroundColor: Color.fromARGB(255, 0, 0, 0),
-                  title: Text('kddjh'),
-                  content:
-                   Container(
-                    height: 350,
-                     child: Column(
-                      children: [
-                       TextFormField(
-                         decoration: InputDecoration(
-                          hintText: 'TYPE NAME',
-                                 filled: true,
-                                 fillColor: const Color.fromARGB(255, 255, 255, 255),
-                                 border: OutlineInputBorder(
-                                   
-                                   borderSide: BorderSide.none,
-                                   borderRadius: BorderRadius.circular(15)
-                                 ),
-                               ),
-                       ),
-                       SizedBox(
-                        height: 16,
-                       ),
-                       TextFormField(
-                         decoration: InputDecoration(
-                          hintText: 'KG',
-                                 filled: true,
-                                 fillColor: const Color.fromARGB(255, 255, 255, 255),
-                                 border: OutlineInputBorder(
-                                   
-                                   borderSide: BorderSide.none,
-                                   borderRadius: BorderRadius.circular(15)
-                                 ),
-                               ),
-                       ),
-                       SizedBox(
-                        height: 16,
-                       ),
-                       TextFormField(
-                         decoration: InputDecoration(
-                          hintText: 'SETS',
-                                 filled: true,
-                                 fillColor: const Color.fromARGB(255, 255, 255, 255),
-                                 border: OutlineInputBorder(
-                                   
-                                   borderSide: BorderSide.none,
-                                   borderRadius: BorderRadius.circular(15)
-                                 ),
-                               ),
-                       ),
-                       SizedBox(
-                        height: 16,
-                       ),
-                       TextFormField(
-                         decoration: InputDecoration(
-                          hintText: 'REPS',
-                                 filled: true,
-                                 fillColor: const Color.fromARGB(255, 255, 255, 255),
-                                 border: OutlineInputBorder(
-                                   
-                                   borderSide: BorderSide.none,
-                                   borderRadius: BorderRadius.circular(15)
-                                 ),
-                               ),
-                       ),
-                       SizedBox(
-                        height: 16,
-                       ),
-                       Container(
-                        height: 50,
-                        width: 300,
-                        // color: Colors.white,
-                        decoration: BoxDecoration(
-
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(15)
-                        ),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            IconButton(onPressed: (){}, icon: Icon(Icons.calendar_month)),
-     DropdownButton<String>(
-                      value: 'Day',
-                      items: <String>['Day', 'Week', 'Month',]
-                          .map<DropdownMenuItem<String>>((String value) {
-                        return DropdownMenuItem<String>(
-                          value: value,
-                          child: Text(
-                            value,
-                            style: TextStyle(fontSize: 30),
-                          ),
-                        );
-                      }).toList(),
-                      onChanged: (String? newValue) {
-                        // You can handle the onChanged event here if needed.
-                      },
-                    ),
-
-                          ],
-                        ),
-                       )
-                      ],
-                                     ),
-                   ),
-
-                  actions: [
-                    MaterialButton(onPressed: (
-                      
-                    ){
-                      
-                     Navigator.push(context, MaterialPageRoute(builder: (context) => ScreeenHome(),));
-                    },
-                    color: Colors.white,
-                    child: Text('ADD'),
-                    )
-                  ],
-                )
-       
-    );
+               Navigator.push(context, MaterialPageRoute(builder:(context) => Textng(),));
+    //     
             },child: Icon(Icons.add),backgroundColor: Colors.black,),
              SizedBox(width: 15,),]
             ),

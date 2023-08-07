@@ -25,10 +25,23 @@ class Workoutmodel {
   @HiveField(6)
   String duration;
 
+  // @HiveField(7)
+  // String personname;
+
+  // @HiveField(8)
+  // String personheight ;
+
+  // @HiveField(9)
+  // String personweight;
+
+  // @HiveField(10)
+  // String personage;
 
 
-  // @HiveField(4)
-  // int dateandtime ; 
+
+
+
+
 
   Workoutmodel({
   required this.typename,
@@ -37,6 +50,11 @@ class Workoutmodel {
   required this.sets,
   this.id,
   required this.date,
-  required this.duration
+  required this.duration,
+  // required this.personname,
+  // required this.personheight,
+  // required this.personweight,
+  // required this.personage
+
 });
 }

@@ -4,12 +4,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/intl.dart';
-import 'package:workouttraker/sub_screens_wtd/other_sub/edit.dart';
 import 'package:workouttraker/dbfunction/functions/db_functions.dart';
 import 'package:workouttraker/dbfunction/model/workoutmodel1.dart';
-import 'package:workouttraker/main_wgts/bottom_main.dart';
-import 'package:workouttraker/main_wgts/task_wtd.dart';
-import 'package:intl/intl_browser.dart';
 import 'package:workouttraker/sub_screens_wtd/other_sub/create.dart';
 
 
@@ -485,7 +481,13 @@ class _ModelsState extends State<Models> {
 return;
   }
   final _task =Workoutmodel(typename: _typename, weight: _weight, reps: _reps, sets: _sets,date: _date ,
-  duration: _duration);
+  duration: _duration,
+  // personname: '',
+  // personheight: '',
+  // personweight: '',
+  // personage: '',
+
+  );
   print('$_typename $_weight');
   addTask(_task);
 

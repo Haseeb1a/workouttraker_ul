@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:workouttraker/sub_screens_wtd/settings_sub/about.dart';
 import 'package:workouttraker/sub_screens_wtd/settings_sub/profile.dart';
-import 'package:workouttraker/sub_screens_wtd/other_sub/splace.dart';
 
 class Settings extends StatefulWidget {
   const Settings({super.key});

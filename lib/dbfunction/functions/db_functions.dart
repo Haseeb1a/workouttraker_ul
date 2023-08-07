@@ -33,6 +33,7 @@ void addTask(Workoutmodel value) async {
   final id = await workoutDB.add(value);
   value.id = id;
   workoutListNotifier.value.add(value);
+  getAllTasks();
 
   workoutListNotifier.notifyListeners();
 }
@@ -41,6 +42,7 @@ Future<void> getAllTasks() async {
   final workoutDB = await Hive.openBox<Workoutmodel>('workout_db');
   workoutListNotifier.value.clear();
   workoutListNotifier.value.addAll(workoutDB.values);
+  
   workoutListNotifier.notifyListeners();
 }
 

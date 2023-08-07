@@ -11,7 +11,7 @@ import 'package:workouttraker/sub_screens_wtd/exercises/forearms.dart';
 import 'package:workouttraker/sub_screens_wtd/exercises/legs.dart';
 import 'package:workouttraker/sub_screens_wtd/exercises/shoulders.dart';
 import 'package:workouttraker/sub_screens_wtd/exercises/triceps.dart';
-import 'package:workouttraker/main.dart';
+
 
 class HomeEx extends StatefulWidget {
   const HomeEx({super.key});
